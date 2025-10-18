@@ -3,7 +3,7 @@ title: "Mạng máy tính là gì?"
 date: 2025-10-04
 draft: false
 description: "Giới thiệu về mạng máy tính, các khái niệm cơ bản như địa chỉ IP, Port, Protocol và mô hình Client-Server."
-image: "/images/blogs/network-intro.svg"
+image: "/images/blogs/network-intro-new.svg"
 tags: ["Network", "Basics", "Introduction"]
 ---
 

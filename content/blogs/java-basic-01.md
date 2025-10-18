@@ -3,7 +3,7 @@ title: "Các lý thuyết cơ bản về Java"
 date: 2025-10-01
 draft: false
 description: "Tìm hiểu về Java, lịch sử, ứng dụng, cú pháp cơ bản, kiểu dữ liệu, biến, toán tử và cấu trúc điều khiển."
-image: "/images/blogs/java-basics.svg"
+image: "/images/blogs/java-basics-new.svg"
 tags: ["Java", "Basics", "Tutorial"]
 ---
 

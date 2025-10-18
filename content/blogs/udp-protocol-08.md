@@ -3,7 +3,7 @@ title: "Giao thức UDP trong Java"
 date: 2025-10-08
 draft: false
 description: "Tìm hiểu về giao thức UDP, sự khác biệt với TCP, và cách sử dụng UDP trong Java."
-image: "/images/blogs/udp-protocol.svg"
+image: "/images/blogs/udp-protocol-new.svg"
 tags: ["Java", "UDP", "Network Protocol"]
 ---
 

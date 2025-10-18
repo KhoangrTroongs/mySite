@@ -3,7 +3,7 @@ title: "Thực hành: Xây dựng ứng dụng Chat với TCP và UDP"
 date: 2025-10-09
 draft: false
 description: "Hướng dẫn xây dựng ứng dụng chat đơn giản sử dụng TCP và UDP, bao gồm server, client và xử lý đa kết nối."
-image: "/images/blogs/chat-app.svg"
+image: "/images/blogs/chat-app-new.svg"
 tags: ["Java", "Chat", "TCP", "UDP", "Practice"]
 ---
 

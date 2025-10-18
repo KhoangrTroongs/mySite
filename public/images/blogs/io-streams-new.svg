@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f8f9fa;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e9ecef;stop-opacity:1" />
+    </linearGradient>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#FF6B6B" />
+    </marker>
+  </defs>
+  
+  <rect width="800" height="500" fill="url(#bgGradient)"/>
+  
+  <!-- Title -->
+  <text x="400" y="35" font-size="28" font-weight="bold" text-anchor="middle" fill="#212529" font-family="Arial, sans-serif">Java Input/Output Streams</text>
+  
+  <!-- Input Stream -->
+  <text x="100" y="80" font-size="14" font-weight="bold" fill="#212529" font-family="Arial">Input Stream (Reading):</text>
+  
+  <rect x="50" y="100" width="100" height="60" fill="#FFE5E5" stroke="#FF6B6B" stroke-width="2" rx="8"/>
+  <text x="100" y="125" font-size="12" font-weight="bold" text-anchor="middle" fill="#FF6B6B" font-family="Arial">File/Source</text>
+  <text x="100" y="145" font-size="10" text-anchor="middle" fill="#333" font-family="Arial">data.txt</text>
+  
+  <path d="M 150 130 L 200 130" stroke="#FF6B6B" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <rect x="200" y="100" width="120" height="60" fill="#FFE5E5" stroke="#FF6B6B" stroke-width="2" rx="8"/>
+  <text x="260" y="125" font-size="12" font-weight="bold" text-anchor="middle" fill="#FF6B6B" font-family="Arial">InputStream</text>
+  <text x="260" y="145" font-size="10" text-anchor="middle" fill="#333" font-family="Arial">read()</text>
+  
+  <path d="M 320 130 L 370 130" stroke="#FF6B6B" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <rect x="370" y="100" width="100" height="60" fill="#FFE5E5" stroke="#FF6B6B" stroke-width="2" rx="8"/>
+  <text x="420" y="125" font-size="12" font-weight="bold" text-anchor="middle" fill="#FF6B6B" font-family="Arial">Program</text>
+  <text x="420" y="145" font-size="10" text-anchor="middle" fill="#333" font-family="Arial">Memory</text>
+  
+  <!-- Output Stream -->
+  <text x="100" y="220" font-size="14" font-weight="bold" fill="#212529" font-family="Arial">Output Stream (Writing):</text>
+  
+  <rect x="50" y="240" width="100" height="60" fill="#E5F5FF" stroke="#4ECDC4" stroke-width="2" rx="8"/>
+  <text x="100" y="265" font-size="12" font-weight="bold" text-anchor="middle" fill="#4ECDC4" font-family="Arial">Program</text>
+  <text x="100" y="285" font-size="10" text-anchor="middle" fill="#333" font-family="Arial">Memory</text>
+  
+  <path d="M 150 270 L 200 270" stroke="#4ECDC4" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <rect x="200" y="240" width="120" height="60" fill="#E5F5FF" stroke="#4ECDC4" stroke-width="2" rx="8"/>
+  <text x="260" y="265" font-size="12" font-weight="bold" text-anchor="middle" fill="#4ECDC4" font-family="Arial">OutputStream</text>
+  <text x="260" y="285" font-size="10" text-anchor="middle" fill="#333" font-family="Arial">write()</text>
+  
+  <path d="M 320 270 L 370 270" stroke="#4ECDC4" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <rect x="370" y="240" width="100" height="60" fill="#E5F5FF" stroke="#4ECDC4" stroke-width="2" rx="8"/>
+  <text x="420" y="265" font-size="12" font-weight="bold" text-anchor="middle" fill="#4ECDC4" font-family="Arial">File/Destination</text>
+  <text x="420" y="285" font-size="10" text-anchor="middle" fill="#333" font-family="Arial">output.txt</text>
+  
+  <!-- Stream Types -->
+  <text x="50" y="350" font-size="14" font-weight="bold" fill="#212529" font-family="Arial">Common Stream Types:</text>
+  
+  <rect x="50" y="370" width="160" height="100" fill="#FFE5E5" stroke="#FF6B6B" stroke-width="2" rx="8"/>
+  <text x="130" y="395" font-size="12" font-weight="bold" text-anchor="middle" fill="#FF6B6B" font-family="Arial">Byte Streams</text>
+  <text x="130" y="415" font-size="11" text-anchor="middle" fill="#333" font-family="Arial">InputStream</text>
+  <text x="130" y="430" font-size="11" text-anchor="middle" fill="#333" font-family="Arial">OutputStream</text>
+  <text x="130" y="450" font-size="10" text-anchor="middle" fill="#666" font-family="Arial">Binary data</text>
+  <text x="130" y="465" font-size="10" text-anchor="middle" fill="#666" font-family="Arial">Images, files</text>
+  
+  <rect x="230" y="370" width="160" height="100" fill="#E5F5FF" stroke="#4ECDC4" stroke-width="2" rx="8"/>
+  <text x="310" y="395" font-size="12" font-weight="bold" text-anchor="middle" fill="#4ECDC4" font-family="Arial">Character Streams</text>
+  <text x="310" y="415" font-size="11" text-anchor="middle" fill="#333" font-family="Arial">Reader</text>
+  <text x="310" y="430" font-size="11" text-anchor="middle" fill="#333" font-family="Arial">Writer</text>
+  <text x="310" y="450" font-size="10" text-anchor="middle" fill="#666" font-family="Arial">Text data</text>
+  <text x="310" y="465" font-size="10" text-anchor="middle" fill="#666" font-family="Arial">Unicode support</text>
+  
+  <rect x="410" y="370" width="160" height="100" fill="#FFF5E5" stroke="#FF9800" stroke-width="2" rx="8"/>
+  <text x="490" y="395" font-size="12" font-weight="bold" text-anchor="middle" fill="#FF9800" font-family="Arial">Buffered Streams</text>
+  <text x="490" y="415" font-size="11" text-anchor="middle" fill="#333" font-family="Arial">BufferedReader</text>
+  <text x="490" y="430" font-size="11" text-anchor="middle" fill="#333" font-family="Arial">BufferedWriter</text>
+  <text x="490" y="450" font-size="10" text-anchor="middle" fill="#666" font-family="Arial">Efficient I/O</text>
+  <text x="490" y="465" font-size="10" text-anchor="middle" fill="#666" font-family="Arial">Buffering</text>
+  
+  <rect x="590" y="370" width="160" height="100" fill="#F0E5FF" stroke="#9C27B0" stroke-width="2" rx="8"/>
+  <text x="670" y="395" font-size="12" font-weight="bold" text-anchor="middle" fill="#9C27B0" font-family="Arial">Data Streams</text>
+  <text x="670" y="415" font-size="11" text-anchor="middle" fill="#333" font-family="Arial">DataInputStream</text>
+  <text x="670" y="430" font-size="11" text-anchor="middle" fill="#333" font-family="Arial">DataOutputStream</text>
+  <text x="670" y="450" font-size="10" text-anchor="middle" fill="#666" font-family="Arial">Primitive types</text>
+  <text x="670" y="465" font-size="10" text-anchor="middle" fill="#666" font-family="Arial">int, double, etc</text>
+</svg>
+

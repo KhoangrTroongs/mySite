@@ -3,7 +3,7 @@ title: "Giao thức TCP trong Java"
 date: 2025-10-07
 draft: false
 description: "Tìm hiểu về giao thức TCP, cách hoạt động, handshake 3 bước, và cách sử dụng TCP trong Java."
-image: "/images/blogs/tcp-protocol.svg"
+image: "/images/blogs/tcp-protocol-new.svg"
 tags: ["Java", "TCP", "Network Protocol"]
 ---
 

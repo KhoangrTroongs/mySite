@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Introduction on Huu Duc&#39;s Portfolio</title>
-    <link>http://localhost:61835/tags/introduction/</link>
+    <link>http://localhost:1313/tags/introduction/</link>
     <description>Recent content in Introduction on Huu Duc&#39;s Portfolio</description>
     <generator>Hugo</generator>
     <language>vi</language>
     <lastBuildDate>Sat, 04 Oct 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:61835/tags/introduction/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/introduction/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Mạng máy tính là gì?</title>
-      <link>http://localhost:61835/blogs/network-intro-04/</link>
+      <link>http://localhost:1313/blogs/network-intro-04/</link>
       <pubDate>Sat, 04 Oct 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:61835/blogs/network-intro-04/</guid>
+      <guid>http://localhost:1313/blogs/network-intro-04/</guid>
       <description>&lt;h2 id=&#34;mạng-máy-tính-là-gì&#34;&gt;Mạng máy tính là gì?&lt;/h2&gt;&#xA;&lt;p&gt;Mạng máy tính là một tập hợp các máy tính được kết nối với nhau để chia sẻ dữ liệu và tài nguyên. Hãy tưởng tượng nó như một hệ thống giao thông - các máy tính là các thành phố, và dữ liệu là các phương tiện di chuyển giữa các thành phố.&lt;/p&gt;&#xA;&lt;h2 id=&#34;địa-chỉ-ip-ip-address&#34;&gt;Địa chỉ IP (IP Address)&lt;/h2&gt;&#xA;&lt;p&gt;Mỗi máy tính trên mạng cần một địa chỉ duy nhất để được xác định - đó là địa chỉ IP.&lt;/p&gt;</description>
     </item>
   </channel>

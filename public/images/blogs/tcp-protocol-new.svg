@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f8f9fa;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e9ecef;stop-opacity:1" />
+    </linearGradient>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#FF6B6B" />
+    </marker>
+    <marker id="arrowhead-green" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#51CF66" />
+    </marker>
+  </defs>
+  
+  <rect width="800" height="500" fill="url(#bgGradient)"/>
+  
+  <!-- Title -->
+  <text x="400" y="35" font-size="28" font-weight="bold" text-anchor="middle" fill="#212529" font-family="Arial, sans-serif">TCP Protocol - 3-Way Handshake</text>
+  
+  <!-- Client and Server -->
+  <rect x="50" y="80" width="120" height="60" fill="#FFE5E5" stroke="#FF6B6B" stroke-width="2" rx="8"/>
+  <text x="110" y="115" font-size="14" font-weight="bold" text-anchor="middle" fill="#FF6B6B" font-family="Arial">Client</text>
+  
+  <rect x="630" y="80" width="120" height="60" fill="#E5F5FF" stroke="#4ECDC4" stroke-width="2" rx="8"/>
+  <text x="690" y="115" font-size="14" font-weight="bold" text-anchor="middle" fill="#4ECDC4" font-family="Arial">Server</text>
+  
+  <!-- Step 1: SYN -->
+  <path d="M 170 140 L 630 140" stroke="#FF6B6B" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <text x="400" y="130" font-size="12" font-weight="bold" text-anchor="middle" fill="#FF6B6B" font-family="Arial">1. SYN (seq=x)</text>
+  <text x="400" y="155" font-size="10" text-anchor="middle" fill="#666" font-family="Arial">Client initiates connection</text>
+  
+  <!-- Step 2: SYN-ACK -->
+  <path d="M 630 180 L 170 180" stroke="#4ECDC4" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <text x="400" y="170" font-size="12" font-weight="bold" text-anchor="middle" fill="#4ECDC4" font-family="Arial">2. SYN-ACK (seq=y, ack=x+1)</text>
+  <text x="400" y="195" font-size="10" text-anchor="middle" fill="#666" font-family="Arial">Server acknowledges and sends its sequence</text>
+  
+  <!-- Step 3: ACK -->
+  <path d="M 170 220 L 630 220" stroke="#51CF66" stroke-width="2" fill="none" marker-end="url(#arrowhead-green)"/>
+  <text x="400" y="210" font-size="12" font-weight="bold" text-anchor="middle" fill="#51CF66" font-family="Arial">3. ACK (seq=x+1, ack=y+1)</text>
+  <text x="400" y="235" font-size="10" text-anchor="middle" fill="#666" font-family="Arial">Client acknowledges - Connection established</text>
+  
+  <!-- Connection States -->
+  <text x="50" y="290" font-size="14" font-weight="bold" fill="#212529" font-family="Arial">TCP Connection States:</text>
+  
+  <rect x="50" y="310" width="160" height="100" fill="#FFE5E5" stroke="#FF6B6B" stroke-width="2" rx="8"/>
+  <text x="130" y="335" font-size="12" font-weight="bold" text-anchor="middle" fill="#FF6B6B" font-family="Arial">LISTEN</text>
+  <text x="130" y="355" font-size="11" text-anchor="middle" fill="#333" font-family="Arial">Server waiting for</text>
+  <text x="130" y="370" font-size="11" text-anchor="middle" fill="#333" font-family="Arial">incoming connections</text>
+  <text x="130" y="390" font-size="10" text-anchor="middle" fill="#666" font-family="Arial">ServerSocket.accept()</text>
+  
+  <rect x="230" y="310" width="160" height="100" fill="#E5F5FF" stroke="#4ECDC4" stroke-width="2" rx="8"/>
+  <text x="310" y="335" font-size="12" font-weight="bold" text-anchor="middle" fill="#4ECDC4" font-family="Arial">ESTABLISHED</text>
+  <text x="310" y="355" font-size="11" text-anchor="middle" fill="#333" font-family="Arial">Connection active</text>
+  <text x="310" y="370" font-size="11" text-anchor="middle" fill="#333" font-family="Arial">Data can be sent</text>
+  <text x="310" y="390" font-size="10" text-anchor="middle" fill="#666" font-family="Arial">Both sides ready</text>
+  
+  <rect x="410" y="310" width="160" height="100" fill="#FFF5E5" stroke="#FF9800" stroke-width="2" rx="8"/>
+  <text x="490" y="335" font-size="12" font-weight="bold" text-anchor="middle" fill="#FF9800" font-family="Arial">FIN_WAIT</text>
+  <text x="490" y="355" font-size="11" text-anchor="middle" fill="#333" font-family="Arial">Waiting for</text>
+  <text x="490" y="370" font-size="11" text-anchor="middle" fill="#333" font-family="Arial">connection close</text>
+  <text x="490" y="390" font-size="10" text-anchor="middle" fill="#666" font-family="Arial">FIN packet sent</text>
+  
+  <rect x="590" y="310" width="160" height="100" fill="#F0E5FF" stroke="#9C27B0" stroke-width="2" rx="8"/>
+  <text x="670" y="335" font-size="12" font-weight="bold" text-anchor="middle" fill="#9C27B0" font-family="Arial">CLOSED</text>
+  <text x="670" y="355" font-size="11" text-anchor="middle" fill="#333" font-family="Arial">Connection</text>
+  <text x="670" y="370" font-size="11" text-anchor="middle" fill="#333" font-family="Arial">terminated</text>
+  <text x="670" y="390" font-size="10" text-anchor="middle" fill="#666" font-family="Arial">No data transfer</text>
+  
+  <!-- TCP Characteristics -->
+  <text x="50" y="450" font-size="12" font-weight="bold" fill="#212529" font-family="Arial">✓ Reliable  ✓ Ordered  ✓ Connection-oriented  ✓ Flow control  ✓ Error checking</text>
+</svg>
+

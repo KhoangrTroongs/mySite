@@ -3,7 +3,7 @@ title: "Quản lý Input/Output Streams trong Java"
 date: 2025-10-05
 draft: false
 description: "Tìm hiểu về Input/Output streams trong Java, cách sử dụng InputStream, OutputStream, BufferedReader, BufferedWriter."
-image: "/images/blogs/io-streams.svg"
+image: "/images/blogs/io-streams-new.svg"
 tags: ["Java", "IO", "Streams"]
 ---
 

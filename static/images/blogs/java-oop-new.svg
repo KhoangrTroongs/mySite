@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f0f2f5;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e1e4e8;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <rect width="900" height="600" fill="url(#bgGradient)"/>
+
+  <!-- Title -->
+  <text x="450" y="40" font-size="32" font-weight="bold" text-anchor="middle" fill="#1a1a1a" font-family="Arial, sans-serif">OOP - Object-Oriented Programming</text>
+  <line x1="100" y1="50" x2="800" y2="50" stroke="#FF6B6B" stroke-width="3"/>
+
+  <!-- Four Pillars -->
+  <text x="50" y="90" font-size="16" font-weight="bold" fill="#212529" font-family="Arial">Four Pillars of OOP:</text>
+
+  <rect x="50" y="110" width="190" height="140" fill="#FFE5E5" stroke="#FF6B6B" stroke-width="2" rx="10" filter="url(#shadow)"/>
+  <text x="145" y="140" font-size="14" font-weight="bold" text-anchor="middle" fill="#FF6B6B" font-family="Arial">1. Encapsulation</text>
+  <line x1="60" y1="150" x2="230" y2="150" stroke="#FF6B6B" stroke-width="1" opacity="0.3"/>
+  <text x="145" y="170" font-size="11" text-anchor="middle" fill="#333" font-family="Arial">Bundle data &amp;</text>
+  <text x="145" y="190" font-size="11" text-anchor="middle" fill="#333" font-family="Arial">methods together</text>
+  <text x="145" y="210" font-size="11" text-anchor="middle" fill="#333" font-family="Arial">Hide internal details</text>
+  <text x="145" y="230" font-size="10" text-anchor="middle" fill="#666" font-family="Arial">private, public</text>
+
+  <rect x="260" y="110" width="190" height="140" fill="#E5F5FF" stroke="#4ECDC4" stroke-width="2" rx="10" filter="url(#shadow)"/>
+  <text x="355" y="140" font-size="14" font-weight="bold" text-anchor="middle" fill="#4ECDC4" font-family="Arial">2. Inheritance</text>
+  <line x1="270" y1="150" x2="440" y2="150" stroke="#4ECDC4" stroke-width="1" opacity="0.3"/>
+  <text x="355" y="170" font-size="11" text-anchor="middle" fill="#333" font-family="Arial">Child inherits from</text>
+  <text x="355" y="190" font-size="11" text-anchor="middle" fill="#333" font-family="Arial">parent class</text>
+  <text x="355" y="210" font-size="11" text-anchor="middle" fill="#333" font-family="Arial">Code reusability</text>
+  <text x="355" y="230" font-size="10" text-anchor="middle" fill="#666" font-family="Arial">extends keyword</text>
+
+  <rect x="470" y="110" width="190" height="140" fill="#FFF5E5" stroke="#FF9800" stroke-width="2" rx="10" filter="url(#shadow)"/>
+  <text x="565" y="140" font-size="14" font-weight="bold" text-anchor="middle" fill="#FF9800" font-family="Arial">3. Polymorphism</text>
+  <line x1="480" y1="150" x2="650" y2="150" stroke="#FF9800" stroke-width="1" opacity="0.3"/>
+  <text x="565" y="170" font-size="11" text-anchor="middle" fill="#333" font-family="Arial">Many forms of</text>
+  <text x="565" y="190" font-size="11" text-anchor="middle" fill="#333" font-family="Arial">same method</text>
+  <text x="565" y="210" font-size="11" text-anchor="middle" fill="#333" font-family="Arial">Method overriding</text>
+  <text x="565" y="230" font-size="10" text-anchor="middle" fill="#666" font-family="Arial">@Override</text>
+
+  <rect x="680" y="110" width="190" height="140" fill="#F0E5FF" stroke="#9C27B0" stroke-width="2" rx="10" filter="url(#shadow)"/>
+  <text x="775" y="140" font-size="14" font-weight="bold" text-anchor="middle" fill="#9C27B0" font-family="Arial">4. Abstraction</text>
+  <line x1="690" y1="150" x2="860" y2="150" stroke="#9C27B0" stroke-width="1" opacity="0.3"/>
+  <text x="775" y="170" font-size="11" text-anchor="middle" fill="#333" font-family="Arial">Hide complexity,</text>
+  <text x="775" y="190" font-size="11" text-anchor="middle" fill="#333" font-family="Arial">show essentials</text>
+  <text x="775" y="210" font-size="11" text-anchor="middle" fill="#333" font-family="Arial">Abstract classes</text>
+  <text x="775" y="230" font-size="10" text-anchor="middle" fill="#666" font-family="Arial">interfaces</text>
+
+  <!-- Example Section -->
+  <text x="50" y="300" font-size="16" font-weight="bold" fill="#212529" font-family="Arial">Example: Animal Class Hierarchy</text>
+
+  <rect x="50" y="320" width="800" height="250" fill="white" stroke="#dee2e6" stroke-width="1" rx="10" filter="url(#shadow)"/>
+
+  <!-- Code Example -->
+  <rect x="70" y="340" width="760" height="210" fill="#f8f9fa" stroke="#adb5bd" stroke-width="1" rx="4"/>
+
+  <text x="85" y="360" font-size="11" font-weight="bold" fill="#212529" font-family="monospace">class Animal {  // Parent class</text>
+  <text x="105" y="380" font-size="11" fill="#666" font-family="monospace">private String name;  // Encapsulation - private data</text>
+  <text x="105" y="400" font-size="11" fill="#666" font-family="monospace">public void makeSound() { }  // Abstraction - general method</text>
+  <text x="85" y="420" font-size="11" font-weight="bold" fill="#212529" font-family="monospace">}</text>
+
+  <text x="85" y="445" font-size="11" font-weight="bold" fill="#212529" font-family="monospace">class Dog extends Animal {  // Inheritance - extends parent</text>
+  <text x="105" y="465" font-size="11" fill="#666" font-family="monospace">@Override  // Polymorphism - override parent method</text>
+  <text x="105" y="485" font-size="11" fill="#666" font-family="monospace">public void makeSound() {</text>
+  <text x="125" y="505" font-size="11" fill="#666" font-family="monospace">System.out.println("Woof! Woof!");</text>
+  <text x="105" y="525" font-size="11" fill="#666" font-family="monospace">}</text>
+  <text x="85" y="545" font-size="11" font-weight="bold" fill="#212529" font-family="monospace">}</text>
+</svg>
+

@@ -3,7 +3,7 @@ title: "Quản lý Kết nối Mạng trong Java"
 date: 2025-10-06
 draft: false
 description: "Hướng dẫn sử dụng InetAddress, Socket, ServerSocket để quản lý kết nối mạng trong Java."
-image: "/images/blogs/network-address.svg"
+image: "/images/blogs/network-address-new.svg"
 tags: ["Java", "Network", "Socket"]
 ---
 

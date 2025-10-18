@@ -3,7 +3,7 @@ title: "Thực hành Java: Xây dựng trò chơi Caro"
 date: 2025-10-03
 draft: false
 description: "Hướng dẫn xây dựng trò chơi Caro từ đầu, bao gồm khởi tạo bàn cờ, xử lý nước đi và kiểm tra thắng/thua."
-image: "/images/blogs/caro-game.svg"
+image: "/images/blogs/caro-game-new.svg"
 tags: ["Java", "Game", "Practice"]
 ---
 

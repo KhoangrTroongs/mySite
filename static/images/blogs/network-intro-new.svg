@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f8f9fa;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e9ecef;stop-opacity:1" />
+    </linearGradient>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#FF6B6B" />
+    </marker>
+  </defs>
+  
+  <rect width="800" height="500" fill="url(#bgGradient)"/>
+  
+  <!-- Title -->
+  <text x="400" y="35" font-size="28" font-weight="bold" text-anchor="middle" fill="#212529" font-family="Arial, sans-serif">Computer Networks Basics</text>
+  
+  <!-- Network Diagram -->
+  <text x="50" y="80" font-size="14" font-weight="bold" fill="#212529" font-family="Arial">Client-Server Model:</text>
+  
+  <!-- Client -->
+  <rect x="50" y="100" width="120" height="80" fill="#FFE5E5" stroke="#FF6B6B" stroke-width="2" rx="8"/>
+  <text x="110" y="130" font-size="14" font-weight="bold" text-anchor="middle" fill="#FF6B6B" font-family="Arial">Client</text>
+  <text x="110" y="155" font-size="11" text-anchor="middle" fill="#333" font-family="Arial">Requests</text>
+  <text x="110" y="170" font-size="10" text-anchor="middle" fill="#666" font-family="Arial">192.168.1.5</text>
+  
+  <!-- Arrow -->
+  <path d="M 170 140 L 230 140" stroke="#FF6B6B" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <text x="200" y="130" font-size="10" text-anchor="middle" fill="#FF6B6B" font-family="Arial">Request</text>
+  
+  <!-- Server -->
+  <rect x="230" y="100" width="120" height="80" fill="#E5F5FF" stroke="#4ECDC4" stroke-width="2" rx="8"/>
+  <text x="290" y="130" font-size="14" font-weight="bold" text-anchor="middle" fill="#4ECDC4" font-family="Arial">Server</text>
+  <text x="290" y="155" font-size="11" text-anchor="middle" fill="#333" font-family="Arial">Responds</text>
+  <text x="290" y="170" font-size="10" text-anchor="middle" fill="#666" font-family="Arial">192.168.1.1</text>
+  
+  <!-- Arrow back -->
+  <path d="M 230 160 L 170 160" stroke="#4ECDC4" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <text x="200" y="180" font-size="10" text-anchor="middle" fill="#4ECDC4" font-family="Arial">Response</text>
+  
+  <!-- Network Concepts -->
+  <text x="50" y="250" font-size="14" font-weight="bold" fill="#212529" font-family="Arial">Key Network Concepts:</text>
+  
+  <rect x="50" y="270" width="170" height="100" fill="#FFE5E5" stroke="#FF6B6B" stroke-width="2" rx="8"/>
+  <text x="135" y="295" font-size="13" font-weight="bold" text-anchor="middle" fill="#FF6B6B" font-family="Arial">IP Address</text>
+  <text x="135" y="315" font-size="11" text-anchor="middle" fill="#333" font-family="Arial">Unique identifier</text>
+  <text x="135" y="330" font-size="11" text-anchor="middle" fill="#333" font-family="Arial">for each device</text>
+  <text x="135" y="350" font-size="10" text-anchor="middle" fill="#666" font-family="Arial">IPv4: 192.168.1.1</text>
+  <text x="135" y="365" font-size="10" text-anchor="middle" fill="#666" font-family="Arial">IPv6: 2001:db8::1</text>
+  
+  <rect x="240" y="270" width="170" height="100" fill="#E5F5FF" stroke="#4ECDC4" stroke-width="2" rx="8"/>
+  <text x="325" y="295" font-size="13" font-weight="bold" text-anchor="middle" fill="#4ECDC4" font-family="Arial">Port</text>
+  <text x="325" y="315" font-size="11" text-anchor="middle" fill="#333" font-family="Arial">Endpoint for</text>
+  <text x="325" y="330" font-size="11" text-anchor="middle" fill="#333" font-family="Arial">communication</text>
+  <text x="325" y="350" font-size="10" text-anchor="middle" fill="#666" font-family="Arial">Range: 0-65535</text>
+  <text x="325" y="365" font-size="10" text-anchor="middle" fill="#666" font-family="Arial">HTTP: 80, HTTPS: 443</text>
+  
+  <rect x="430" y="270" width="170" height="100" fill="#FFF5E5" stroke="#FF9800" stroke-width="2" rx="8"/>
+  <text x="515" y="295" font-size="13" font-weight="bold" text-anchor="middle" fill="#FF9800" font-family="Arial">Protocol</text>
+  <text x="515" y="315" font-size="11" text-anchor="middle" fill="#333" font-family="Arial">Rules for data</text>
+  <text x="515" y="330" font-size="11" text-anchor="middle" fill="#333" font-family="Arial">transmission</text>
+  <text x="515" y="350" font-size="10" text-anchor="middle" fill="#666" font-family="Arial">TCP, UDP, HTTP</text>
+  <text x="515" y="365" font-size="10" text-anchor="middle" fill="#666" font-family="Arial">FTP, DNS, SMTP</text>
+  
+  <rect x="620" y="270" width="130" height="100" fill="#F0E5FF" stroke="#9C27B0" stroke-width="2" rx="8"/>
+  <text x="685" y="295" font-size="13" font-weight="bold" text-anchor="middle" fill="#9C27B0" font-family="Arial">Socket</text>
+  <text x="685" y="315" font-size="11" text-anchor="middle" fill="#333" font-family="Arial">Connection</text>
+  <text x="685" y="330" font-size="11" text-anchor="middle" fill="#333" font-family="Arial">endpoint</text>
+  <text x="685" y="350" font-size="10" text-anchor="middle" fill="#666" font-family="Arial">IP:Port</text>
+  <text x="685" y="365" font-size="10" text-anchor="middle" fill="#666" font-family="Arial">combination</text>
+</svg>
+

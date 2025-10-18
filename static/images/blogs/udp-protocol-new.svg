@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <!-- Background -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f8f9fa;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e9ecef;stop-opacity:1" />
+    </linearGradient>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#FF6B6B" />
+    </marker>
+    <marker id="arrowhead-green" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#51CF66" />
+    </marker>
+  </defs>
+  
+  <rect width="800" height="500" fill="url(#bgGradient)"/>
+  
+  <!-- Title -->
+  <text x="400" y="35" font-size="28" font-weight="bold" text-anchor="middle" fill="#212529" font-family="Arial, sans-serif">UDP Protocol (User Datagram Protocol)</text>
+  
+  <!-- Client Box -->
+  <rect x="50" y="100" width="150" height="100" fill="#FF6B6B" stroke="#c92a2a" stroke-width="2" rx="8"/>
+  <text x="125" y="135" font-size="16" font-weight="bold" text-anchor="middle" fill="white" font-family="Arial">Client</text>
+  <text x="125" y="160" font-size="12" text-anchor="middle" fill="white" font-family="Arial">Port: 5000</text>
+  <text x="125" y="180" font-size="11" text-anchor="middle" fill="rgba(255,255,255,0.9)" font-family="Arial">Sender</text>
+  
+  <!-- Server Box -->
+  <rect x="600" y="100" width="150" height="100" fill="#4ECDC4" stroke="#0b8a78" stroke-width="2" rx="8"/>
+  <text x="675" y="135" font-size="16" font-weight="bold" text-anchor="middle" fill="white" font-family="Arial">Server</text>
+  <text x="675" y="160" font-size="12" text-anchor="middle" fill="white" font-family="Arial">Port: 5001</text>
+  <text x="675" y="180" font-size="11" text-anchor="middle" fill="rgba(255,255,255,0.9)" font-family="Arial">Receiver</text>
+  
+  <!-- Arrows - Client to Server (Fast, No Connection) -->
+  <path d="M 200 130 L 600 130" stroke="#FF6B6B" stroke-width="3" fill="none" marker-end="url(#arrowhead)" stroke-dasharray="5,5"/>
+  <text x="400" y="115" font-size="12" font-weight="bold" text-anchor="middle" fill="#FF6B6B" font-family="Arial">Packet 1 (Fast)</text>
+  
+  <path d="M 200 160 L 600 160" stroke="#FF6B6B" stroke-width="3" fill="none" marker-end="url(#arrowhead)" stroke-dasharray="5,5"/>
+  <text x="400" y="145" font-size="12" font-weight="bold" text-anchor="middle" fill="#FF6B6B" font-family="Arial">Packet 2 (May be lost)</text>
+  
+  <path d="M 200 190 L 600 190" stroke="#FF6B6B" stroke-width="3" fill="none" marker-end="url(#arrowhead)" stroke-dasharray="5,5"/>
+  <text x="400" y="175" font-size="12" font-weight="bold" text-anchor="middle" fill="#FF6B6B" font-family="Arial">Packet 3 (Out of order)</text>
+  
+  <!-- UDP Packet Structure -->
+  <text x="50" y="250" font-size="14" font-weight="bold" fill="#212529" font-family="Arial">UDP Packet Structure:</text>
+  
+  <rect x="50" y="270" width="700" height="40" fill="white" stroke="#dee2e6" stroke-width="1" rx="4"/>
+  <rect x="50" y="270" width="140" height="40" fill="#FFE5E5" stroke="#FF6B6B" stroke-width="1"/>
+  <text x="120" y="300" font-size="11" font-weight="bold" text-anchor="middle" fill="#FF6B6B" font-family="Arial">Source Port</text>
+  
+  <rect x="190" y="270" width="140" height="40" fill="#E5F5FF" stroke="#4ECDC4" stroke-width="1"/>
+  <text x="260" y="300" font-size="11" font-weight="bold" text-anchor="middle" fill="#4ECDC4" font-family="Arial">Dest Port</text>
+  
+  <rect x="330" y="270" width="140" height="40" fill="#FFF5E5" stroke="#FF9800" stroke-width="1"/>
+  <text x="400" y="300" font-size="11" font-weight="bold" text-anchor="middle" fill="#FF9800" font-family="Arial">Length</text>
+  
+  <rect x="470" y="270" width="140" height="40" fill="#F0E5FF" stroke="#9C27B0" stroke-width="1"/>
+  <text x="540" y="300" font-size="11" font-weight="bold" text-anchor="middle" fill="#9C27B0" font-family="Arial">Checksum</text>
+  
+  <rect x="610" y="270" width="140" height="40" fill="#E5FFE5" stroke="#51CF66" stroke-width="1"/>
+  <text x="680" y="300" font-size="11" font-weight="bold" text-anchor="middle" fill="#51CF66" font-family="Arial">Data</text>
+  
+  <!-- Characteristics -->
+  <text x="50" y="350" font-size="14" font-weight="bold" fill="#212529" font-family="Arial">UDP Characteristics:</text>
+  
+  <g>
+    <circle cx="70" cy="380" r="4" fill="#51CF66"/>
+    <text x="85" y="385" font-size="12" fill="#212529" font-family="Arial">Connectionless - No handshake required</text>
+  </g>
+  
+  <g>
+    <circle cx="70" cy="410" r="4" fill="#51CF66"/>
+    <text x="85" y="415" font-size="12" fill="#212529" font-family="Arial">Fast - Minimal overhead, low latency</text>
+  </g>
+  
+  <g>
+    <circle cx="70" cy="440" r="4" fill="#51CF66"/>
+    <text x="85" y="445" font-size="12" fill="#212529" font-family="Arial">Unreliable - Packets may be lost or arrive out of order</text>
+  </g>
+  
+  <g>
+    <circle cx="450" cy="380" r="4" fill="#51CF66"/>
+    <text x="465" y="385" font-size="12" fill="#212529" font-family="Arial">No flow control or congestion control</text>
+  </g>
+  
+  <g>
+    <circle cx="450" cy="410" r="4" fill="#51CF66"/>
+    <text x="465" y="415" font-size="12" fill="#212529" font-family="Arial">Suitable for real-time applications</text>
+  </g>
+  
+  <g>
+    <circle cx="450" cy="440" r="4" fill="#51CF66"/>
+    <text x="465" y="445" font-size="12" fill="#212529" font-family="Arial">Used for: Video, Gaming, DNS, VoIP, IoT</text>
+  </g>
+</svg>
+
