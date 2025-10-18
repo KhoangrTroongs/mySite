@@ -1,0 +1,25 @@
+certificates:
+  - id: javascript-essentials-1
+    title: "JavaScript Essentials 1"
+    description: "Mastered the fundamentals of JavaScript programming"
+    badge: "/images/chungnhan/javascript-essentials-1.png"
+    certificate: "/images/chungnhan/javascript-essentials-1.pdf"
+    issuer: "Codecademy"
+    date: "2025-10-01"
+
+  - id: javascript-essentials-2
+    title: "JavaScript Essentials 2"
+    description: "Advanced JavaScript concepts and best practices"
+    badge: "/images/chungnhan/javascript-essentials-2.png"
+    certificate: "/images/chungnhan/javascript-essentials-2.pdf"
+    issuer: "Codecademy"
+    date: "2025-10-02"
+
+  - id: networking-basics
+    title: "Networking Basics"
+    description: "Comprehensive understanding of computer networking fundamentals"
+    badge: "/images/chungnhan/networking-basics.png"
+    certificate: "/images/chungnhan/networking-basics.pdf"
+    issuer: "Coursera"
+    date: "2025-10-03"
+

@@ -1,0 +1,37 @@
+repositories:
+  - id: webbanhang
+    name: "WEBBANHANG"
+    description: "E-commerce website for selling products online"
+    language: "PHP"
+    url: "https://github.com/KhoangrTroongs/WEBBANHANG"
+
+  - id: dacs-elegantsuits
+    name: "DACS Elegant Suits"
+    description: "E-commerce website for elegant suits and formal wear"
+    language: "HTML"
+    url: "https://github.com/KhoangrTroongs/DACS_Elegantsuits"
+
+  - id: demodocker
+    name: "Demo Docker"
+    description: "Docker containerization demo and examples"
+    language: "HTML"
+    url: "https://github.com/KhoangrTroongs/demodocker"
+
+  - id: ngohuuduc-2280600725
+    name: "NgoHuuDuc-2280600725"
+    description: "C# project for academic coursework"
+    language: "C#"
+    url: "https://github.com/KhoangrTroongs/NgoHuuDuc-2280600725"
+
+  - id: bmttnc-hutech
+    name: "BMTTNC HUTECH"
+    description: "Python project for network programming and communication"
+    language: "Python"
+    url: "https://github.com/KhoangrTroongs/bmttnc-hutech-2280600725"
+
+  - id: lab06
+    name: "Lab 06 - Final Test"
+    description: "Python laboratory assignment - Final Test"
+    language: "Python"
+    url: "https://github.com/KhoangrTroongs/NgoHuuDuc_2280600725_Lab06"
+

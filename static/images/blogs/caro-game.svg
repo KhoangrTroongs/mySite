@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <rect width="400" height="300" fill="#f5f5f5"/>
+  <g transform="translate(100, 50)">
+    <rect x="0" y="0" width="200" height="200" fill="white" stroke="#333" stroke-width="2"/>
+    <line x1="66" y1="0" x2="66" y2="200" stroke="#333" stroke-width="2"/>
+    <line x1="132" y1="0" x2="132" y2="200" stroke="#333" stroke-width="2"/>
+    <line x1="0" y1="66" x2="200" y2="66" stroke="#333" stroke-width="2"/>
+    <line x1="0" y1="132" x2="200" y2="132" stroke="#333" stroke-width="2"/>
+    <circle cx="33" cy="33" r="20" fill="none" stroke="#FF6B6B" stroke-width="3"/>
+    <circle cx="99" cy="33" r="20" fill="none" stroke="#4ECDC4" stroke-width="3"/>
+    <circle cx="165" cy="33" r="20" fill="none" stroke="#FF6B6B" stroke-width="3"/>
+    <text x="33" y="40" font-size="24" font-weight="bold" text-anchor="middle" fill="#FF6B6B" font-family="Arial">X</text>
+    <text x="99" y="40" font-size="24" font-weight="bold" text-anchor="middle" fill="#4ECDC4" font-family="Arial">O</text>
+    <text x="165" y="40" font-size="24" font-weight="bold" text-anchor="middle" fill="#FF6B6B" font-family="Arial">X</text>
+  </g>
+  <text x="200" y="280" font-size="20" font-weight="bold" text-anchor="middle" fill="#333" font-family="Arial">Caro Game</text>
+</svg>
+

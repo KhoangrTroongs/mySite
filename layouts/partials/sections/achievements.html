@@ -1,0 +1,206 @@
+{{ if .Site.Params.achievements.enable | default false }}
+<section id="achievements" class="py-5">
+    <div class="container">
+        <h3 class="text-center">{{ .Site.Params.achievements.title | default "Achievements" }}</h3>
+        <div class="px-0 px-md-5 px-lg-5">
+            <div class="row justify-content-center px-3 px-md-5 px-lg-5">
+                <!-- Display certificates from data file -->
+                {{ if .Site.Data.achievements }}
+                    {{ range .Site.Data.achievements.certificates }}
+                    <div class="col-lg-3 col-md-4 col-sm-6 my-4">
+                        <div class="achievement-badge-card" data-bs-toggle="modal" data-bs-target="#certificateModal{{ .id }}" style="cursor: pointer;">
+                            <div class="badge-container">
+                                <img src="{{ .badge }}" alt="{{ .title }}" class="achievement-badge" title="Click to view certificate">
+                            </div>
+                            <div class="badge-info">
+                                <h5 class="badge-title">{{ .title }}</h5>
+                                <p class="badge-issuer">{{ .issuer }}</p>
+                                <p class="badge-description">{{ .description }}</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Modal for Certificate -->
+                    <div class="modal fade" id="certificateModal{{ .id }}" tabindex="-1" aria-labelledby="certificateModalLabel{{ .id }}" aria-hidden="true">
+                        <div class="modal-dialog modal-lg modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="certificateModalLabel{{ .id }}">{{ .title }}</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="certificate-viewer">
+                                        <iframe src="{{ .certificate }}#toolbar=0"
+                                                type="application/pdf"
+                                                width="100%"
+                                                height="600px"
+                                                style="border: none; border-radius: 0.5rem;">
+                                        </iframe>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <a href="{{ .certificate }}" download class="btn btn-primary" title="Download certificate">
+                                        <i class="fas fa-download"></i> Download
+                                    </a>
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {{ end }}
+                {{ else }}
+                    <!-- Fallback to old achievements config if data file doesn't exist -->
+                    {{ range .Site.Params.achievements.items }}
+                    {{ if .url }}
+                    <div class="col-lg-4 col-md-6 my-3">
+                        <a class="card my-3 h-100 p-3" href="{{ .url }}" title="{{ .title }}" target="_blank">
+                            {{if .image }}
+                                <div class="card-head">
+                                    <img class="card-img-top" src="{{ .image }}">
+                                </div>
+                            {{ end }}
+                            <div class="card-body bg-transparent">
+                                <h5 class="card-title bg-transparent">{{ .title }}</h5>
+                                <div class="card-text secondary-font">
+                                    {{ .content }}
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    {{ else }}
+                    <div class="col-lg-4 col-md-6 my-3">
+                        <div class="card my-3 h-100 p-3" title="{{ .title }}">
+                            {{if .image }}
+                                <div class="card-head">
+                                    <img class="card-img-top" src="{{ .image }}">
+                                </div>
+                            {{ end }}
+                            <div class="card-body bg-transparent">
+                                <h5 class="card-title bg-transparent">{{ .title }}</h5>
+                                <div class="card-text secondary-font">
+                                    {{ .content }}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {{ end }}
+                    {{ end }}
+                {{ end }}
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+.achievement-badge-card {
+    background-color: var(--secondary-color);
+    border-radius: 1rem;
+    box-shadow: 0 0 36px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    padding: 1.5rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.achievement-badge-card:hover {
+    border: 2px solid var(--text-color);
+    transform: translateY(-5px);
+    box-shadow: 0 8px 48px rgba(0,0,0,0.15);
+}
+
+.badge-container {
+    margin-bottom: 1rem;
+    flex-shrink: 0;
+}
+
+.achievement-badge {
+    max-width: 150px;
+    height: auto;
+    border-radius: 0.5rem;
+    transition: transform 0.3s ease;
+}
+
+.achievement-badge-card:hover .achievement-badge {
+    transform: scale(1.05);
+}
+
+.badge-info {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.badge-title {
+    color: var(--text-color);
+    opacity: 0.9;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.badge-issuer {
+    color: var(--text-secondary-color);
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.badge-description {
+    color: var(--text-secondary-color);
+    font-size: 0.85rem;
+    margin: 0;
+    line-height: 1.4;
+}
+
+.certificate-viewer {
+    background-color: #f5f5f5;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.modal-content {
+    background-color: var(--secondary-color);
+    border: 1px solid var(--text-secondary-color);
+}
+
+.modal-header {
+    border-bottom: 1px solid var(--text-secondary-color);
+    background-color: var(--secondary-color);
+}
+
+.modal-title {
+    color: var(--text-color);
+}
+
+.btn-close {
+    filter: invert(1);
+}
+
+@media (max-width: 768px) {
+    .achievement-badge-card {
+        padding: 1rem;
+    }
+
+    .achievement-badge {
+        max-width: 120px;
+    }
+
+    .badge-title {
+        font-size: 1rem;
+    }
+
+    .badge-description {
+        font-size: 0.8rem;
+    }
+
+    .modal-dialog {
+        margin: 0.5rem;
+    }
+}
+</style>
+{{ end }}
+

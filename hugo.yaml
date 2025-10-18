@@ -1,0 +1,207 @@
+baseURL: "https://example.org/"
+languageCode: "vi"
+title: "Huu Duc's Portfolio"
+theme: profile
+
+outputs:
+  home:
+    - "HTML"
+    - "RSS"
+    - "JSON"
+  page:
+    - "HTML"
+    - "RSS"
+
+enableRobotsTXT: true
+
+pagination:
+  pagerSize: 3
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+Menus:
+  main:
+    - identifier: blog
+      name: Blog
+      title: Blog posts
+      url: /blogs
+      weight: 1
+    - identifier: gallery
+      name: Gallery
+      title: Gallery
+      url: /gallery
+      weight: 2
+
+params:
+  title: "My Portfolio"
+  description: "Welcome to my personal portfolio"
+  favicon: "/fav.png"
+  useBootstrapCDN: false
+  mathjax: false
+  animate: true
+
+  theme:
+    # disableThemeToggle: true
+    # defaultTheme: "light"
+
+  font:
+    fontSize: 1rem
+    fontWeight: 400
+    lineHeight: 1.5
+    textAlign: left
+
+  navbar:
+    align: ms-auto
+    brandName: "Huu Duc"
+    disableSearch: false
+    stickyNavBar:
+      enable: true
+      showOnScrollUp: true
+    enableSeparator: false
+    menus:
+      disableAbout: false
+      disableExperience: false
+      disableEducation: false
+      disableProjects: false
+      disableAchievements: false
+      disableContact: false
+    languageSwitcher:
+      enable: true
+
+  # Hero
+  hero:
+    enable: true
+    intro: "Hi, my name is"
+    title: "Huu Duc Ngo"
+    subtitle: "Ready to do more, ready to Learn more"
+    content: "A passionate software developer. I tend to make use of modern web technologies to build websites that look great, feel fantastic, and function correctly."
+    image: /images/hero.svg
+    bottomImage:
+      enable: false
+    button:
+      enable: true
+      name: "Resume"
+      url: "#"
+      download: true
+      newPage: false
+    socialLinks:
+      fontAwesomeIcons:
+        - icon: fab fa-github
+          url: https://github.com/khoangrtroongs
+        - icon: fab fa-x-twitter
+          url: https://twitter.com
+
+  # About
+  about:
+    enable: true
+    title: "About Me"
+    image: "/images/me.png"
+    content: "I am a software developer with a passion for web development and network programming. I have experience building web applications, desktop applications, and working with various programming languages and frameworks."
+    skills:
+      enable: true
+      title: "Skills"
+      items:
+        - "**Programming Languages:** C, Java, C#, Python, HTML, CSS, JavaScript, SQL"
+        - "**Frameworks:** ASP.NET Core, Entity Framework, Flask, React (Basic)"
+        - "**Development Tools:** Git / GitHub, Visual Studio, VS Code, SQL Server"
+        - "**Other Skills:** UI/UX Design with WinForms, Agile Methodology, Technical Documentation"
+
+  # Experience
+  experience:
+    enable: true
+    title: "Experience"
+    items:
+      - company: "Programming Languages"
+        companyUrl: ""
+        jobs:
+          - name: "Main Technologies"
+            date: "2020 - Present"
+            content: |
+              - ASP.NET Core (C#): Web APIs, MVC, Razor Pages
+              - Python: scripting, data processing, server-side development
+              - Databases: MySQL, SQL Server
+              - Web: HTML, CSS, JavaScript, RESTful APIs, WebSocket
+              - Tools: Git, Docker, CI/CD
+
+              <p class="mt-3">
+              <span class="badge badge-language">C#</span>
+              <span class="badge badge-language">ASP.NET Core</span>
+              <span class="badge badge-language">Python</span>
+              <span class="badge badge-language">MySQL</span>
+              <span class="badge badge-language">SQL Server</span>
+              <span class="badge badge-language">JavaScript</span>
+              <span class="badge badge-language">Docker</span>
+              </p>
+
+  # Education
+  education:
+    enable: true
+    items:
+      - title: "Bachelor of Science in Software Engineering"
+        school:
+          name: "Ho Chi Minh University of Technology"
+          url: "https://hutech.edu.vn/"
+        date: "2022 - 2026"
+        GPA: "3.4 out of 4.0"
+
+  # Achievements
+  achievements:
+    enable: true
+    title: "Achievements & Certifications"
+    items: []
+
+  # Projects
+  projects:
+    enable: true
+    title: "My GitHub Projects"
+    items: []
+
+  # Contact
+  contact:
+    enable: true
+    content: "My inbox is always open. Whether you have a question or just want to say hi, I'll try my best to get back to you!"
+    btnName: "Mail me"
+    btnLink: "mailto:nhd.tkc@gmail.com"
+
+  footer:
+    recentPosts:
+      path: "blogs"
+      count: 3
+      title: "Recent Posts"
+      enable: true
+      disableFeaturedImage: false
+    socialNetworks:
+      github: https://github.com/khoangrtrongs
+      linkedin: https://linkedin.com
+      twitter: https://twitter.com
+      instagram: https://instagram.com
+
+  listPages:
+    disableFeaturedImage: false
+
+  singlePages:
+    socialShare: true
+    readTime:
+      enable: true
+      content: "min read"
+    scrollprogress:
+      enable: true
+    tags:
+      openInNewTab: true
+
+  terms:
+    read: "Read"
+    toc: "Table Of Contents"
+    copyright: "All rights reserved"
+    pageNotFound: "Page not found"
+    emailText: "Check out this site"
+    social: "Social"
+
+  datesFormat:
+    article: "Jan 2, 2006"
+    articleList: "Jan 2, 2006"
+    articleRecent: "Jan 2, 2006"
+

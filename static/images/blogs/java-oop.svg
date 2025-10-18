@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <defs>
+    <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="#f5f5f5"/>
+  <circle cx="100" cy="80" r="40" fill="#FF6B6B" stroke="#333" stroke-width="2"/>
+  <circle cx="300" cy="80" r="40" fill="#4ECDC4" stroke="#333" stroke-width="2"/>
+  <circle cx="200" cy="180" r="40" fill="#45B7D1" stroke="#333" stroke-width="2"/>
+  <line x1="130" y1="100" x2="170" y2="160" stroke="#333" stroke-width="2"/>
+  <line x1="270" y1="100" x2="230" y2="160" stroke="#333" stroke-width="2"/>
+  <text x="200" y="250" font-size="24" font-weight="bold" text-anchor="middle" fill="#333" font-family="Arial">OOP Principles</text>
+  <text x="100" y="95" font-size="12" font-weight="bold" text-anchor="middle" fill="white" font-family="Arial">A</text>
+  <text x="300" y="95" font-size="12" font-weight="bold" text-anchor="middle" fill="white" font-family="Arial">B</text>
+  <text x="200" y="195" font-size="12" font-weight="bold" text-anchor="middle" fill="white" font-family="Arial">C</text>
+</svg>
+
