@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Trang chủ on Huu Duc&#39;s Portfolio</title>
+    <link>http://localhost:61835/vi/</link>
+    <description>Recent content in Trang chủ on Huu Duc&#39;s Portfolio</description>
+    <generator>Hugo</generator>
+    <language>vi</language>
+    <atom:link href="http://localhost:61835/vi/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Thư viện</title>
+      <link>http://localhost:61835/vi/gallery/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:61835/vi/gallery/</guid>
+      <description>&lt;p&gt;Đây là trang thư viện của bạn. Bạn có thể thêm hình ảnh và mô tả ở đây.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

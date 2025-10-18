@@ -76,9 +76,10 @@ params:
     enable: true
     intro: "Hi, my name is"
     title: "Huu Duc Ngo"
-    subtitle: "Ready to do more, ready to Learn more"
+    subtitle: "Ready to **DO** more  \nReady to **LEARN** more"
     content: "A passionate software developer. I tend to make use of modern web technologies to build websites that look great, feel fantastic, and function correctly."
-    image: /images/hero.svg
+    image: null
+    backgroundImage: "/images/me-wall.jpeg"
     bottomImage:
       enable: false
     button:

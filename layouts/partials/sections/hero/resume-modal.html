@@ -1,0 +1,295 @@
+<!-- Resume Modal -->
+<div class="modal fade" id="resumeModal" tabindex="-1" aria-labelledby="resumeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-scrollable">
+        <div class="modal-content resume-modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="resumeModalLabel">Professional Resume</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body" id="resumeContent">
+                <!-- Resume content will be generated here -->
+                <div class="resume-container">
+                    <!-- Header with Profile -->
+                    <div class="resume-header text-center mb-4">
+                        <img src="/images/me.png" alt="Profile" class="resume-avatar rounded-circle mb-3" style="width: 100px; height: 100px; object-fit: cover;">
+                        <h2 class="mb-1">{{ .Site.Params.hero.title }}</h2>
+                        <p class="text-muted mb-2">{{ .Site.Params.hero.subtitle | markdownify }}</p>
+                        <p class="text-muted small">
+                            <i class="fas fa-envelope"></i> nhd.tkc@gmail.com | 
+                            <i class="fab fa-github"></i> <a href="https://github.com/khoangrtroongs" target="_blank">GitHub</a>
+                        </p>
+                    </div>
+
+                    <!-- About Section -->
+                    {{ if .Site.Params.about.enable }}
+                    <div class="resume-section mb-4">
+                        <h5 class="section-title border-bottom pb-2 mb-3">
+                            <i class="fas fa-user"></i> About Me
+                        </h5>
+                        <p class="small">{{ .Site.Params.about.content }}</p>
+                    </div>
+                    {{ end }}
+
+                    <!-- Skills Section -->
+                    {{ if and .Site.Params.about.enable .Site.Params.about.skills.enable }}
+                    <div class="resume-section mb-4">
+                        <h5 class="section-title border-bottom pb-2 mb-3">
+                            <i class="fas fa-star"></i> Skills
+                        </h5>
+                        <div class="skills-list">
+                            {{ range .Site.Params.about.skills.items }}
+                            <div class="skill-item mb-2">
+                                <small>{{ . | markdownify }}</small>
+                            </div>
+                            {{ end }}
+                        </div>
+                    </div>
+                    {{ end }}
+
+                    <!-- Experience Section -->
+                    {{ if .Site.Params.experience.enable }}
+                    <div class="resume-section mb-4">
+                        <h5 class="section-title border-bottom pb-2 mb-3">
+                            <i class="fas fa-briefcase"></i> Experience
+                        </h5>
+                        {{ range .Site.Params.experience.items }}
+                        <div class="experience-item mb-3">
+                            <div class="d-flex justify-content-between align-items-start">
+                                <h6 class="mb-1">{{ .company }}</h6>
+                                {{ range .jobs }}
+                                <span class="badge bg-secondary small">{{ .date }}</span>
+                                {{ end }}
+                            </div>
+                            {{ range .jobs }}
+                            <p class="small text-muted mb-2"><strong>{{ .name }}</strong></p>
+                            <p class="small mb-2">{{ .content | markdownify }}</p>
+                            {{ end }}
+                        </div>
+                        {{ end }}
+                    </div>
+                    {{ end }}
+
+                    <!-- Education Section -->
+                    {{ if .Site.Params.education.enable }}
+                    <div class="resume-section mb-4">
+                        <h5 class="section-title border-bottom pb-2 mb-3">
+                            <i class="fas fa-graduation-cap"></i> Education
+                        </h5>
+                        {{ range .Site.Params.education.items }}
+                        <div class="education-item mb-3">
+                            <div class="d-flex justify-content-between align-items-start">
+                                <div>
+                                    <h6 class="mb-1">{{ .title }}</h6>
+                                    <p class="small text-muted mb-1">{{ .school.name }}</p>
+                                </div>
+                                <span class="badge bg-info small">{{ .date }}</span>
+                            </div>
+                            {{ if .GPA }}
+                            <p class="small mb-0"><strong>GPA:</strong> {{ .GPA }}</p>
+                            {{ end }}
+                        </div>
+                        {{ end }}
+                    </div>
+                    {{ end }}
+
+                    <!-- Projects Section -->
+                    {{ if and .Site.Params.projects.enable .Site.Data.projects }}
+                    <div class="resume-section mb-4">
+                        <h5 class="section-title border-bottom pb-2 mb-3">
+                            <i class="fas fa-code"></i> Projects
+                        </h5>
+                        {{ range first 6 .Site.Data.projects.repositories }}
+                        <div class="project-item mb-2">
+                            <div class="d-flex justify-content-between align-items-start">
+                                <h6 class="mb-1">{{ .name }}</h6>
+                                <span class="badge bg-primary small">{{ .language }}</span>
+                            </div>
+                            <p class="small text-muted mb-0">{{ .description }}</p>
+                        </div>
+                        {{ end }}
+                    </div>
+                    {{ end }}
+
+                    <!-- Achievements Section -->
+                    {{ if and .Site.Params.achievements.enable .Site.Data.achievements }}
+                    <div class="resume-section mb-4">
+                        <h5 class="section-title border-bottom pb-2 mb-3">
+                            <i class="fas fa-trophy"></i> Certifications
+                        </h5>
+                        {{ range first 5 .Site.Data.achievements.certificates }}
+                        <div class="achievement-item mb-2">
+                            <div class="d-flex justify-content-between align-items-start">
+                                <h6 class="mb-1">{{ .title }}</h6>
+                                <span class="badge bg-success small">{{ .date | dateFormat "Jan 2006" }}</span>
+                            </div>
+                            <p class="small text-muted mb-1">{{ .issuer }}</p>
+                            <p class="small mb-0">{{ .description }}</p>
+                        </div>
+                        {{ end }}
+                    </div>
+                    {{ end }}
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" onclick="window.print()">
+                    <i class="fas fa-print"></i> Print / Save as PDF
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    /* Light mode (default) */
+    .resume-modal-content {
+        background-color: #ffffff;
+        color: #333;
+    }
+
+    .resume-modal-content .modal-header {
+        background-color: #f8f9fa;
+        border-bottom: 1px solid #dee2e6;
+    }
+
+    .resume-modal-content .modal-header .btn-close {
+        filter: invert(0);
+    }
+
+    .resume-modal-content .modal-footer {
+        background-color: #f8f9fa;
+        border-top: 1px solid #dee2e6;
+    }
+
+    .resume-container {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: #333;
+    }
+
+    .resume-header {
+        padding-bottom: 20px;
+        border-bottom: 2px solid #e9ecef;
+        margin-bottom: 20px;
+    }
+
+    .resume-header h2 {
+        font-weight: 700;
+        color: #212529;
+    }
+
+    .resume-header p {
+        color: #666;
+    }
+
+    .resume-section {
+        margin-bottom: 20px;
+    }
+
+    .section-title {
+        font-size: 1.1rem;
+        font-weight: 600;
+        color: #212529;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .section-title i {
+        color: #0d6efd;
+    }
+
+    .experience-item,
+    .education-item,
+    .project-item,
+    .achievement-item {
+        padding: 10px 0;
+    }
+
+    .experience-item h6,
+    .education-item h6,
+    .project-item h6,
+    .achievement-item h6 {
+        font-weight: 600;
+        color: #212529;
+        margin-bottom: 5px;
+    }
+
+    .skill-item {
+        padding: 5px 0;
+    }
+
+    .resume-avatar {
+        border: 3px solid #0d6efd;
+    }
+
+    /* Dark mode support */
+    [data-bs-theme="dark"] .resume-modal-content {
+        background-color: #212529;
+        color: #e9ecef;
+    }
+
+    [data-bs-theme="dark"] .resume-modal-content .modal-header {
+        background-color: #2d3139;
+        border-bottom-color: #495057;
+    }
+
+    [data-bs-theme="dark"] .resume-modal-content .modal-header .btn-close {
+        filter: invert(1);
+    }
+
+    [data-bs-theme="dark"] .resume-modal-content .modal-footer {
+        background-color: #2d3139;
+        border-top-color: #495057;
+    }
+
+    [data-bs-theme="dark"] .resume-container {
+        color: #e9ecef;
+    }
+
+    [data-bs-theme="dark"] .resume-header {
+        border-bottom-color: #495057;
+    }
+
+    [data-bs-theme="dark"] .resume-header h2 {
+        color: #ffffff;
+    }
+
+    [data-bs-theme="dark"] .resume-header p {
+        color: #adb5bd;
+    }
+
+    [data-bs-theme="dark"] .section-title {
+        color: #ffffff;
+    }
+
+    [data-bs-theme="dark"] .experience-item h6,
+    [data-bs-theme="dark"] .education-item h6,
+    [data-bs-theme="dark"] .project-item h6,
+    [data-bs-theme="dark"] .achievement-item h6 {
+        color: #ffffff;
+    }
+
+    [data-bs-theme="dark"] .text-muted {
+        color: #adb5bd !important;
+    }
+
+    @media print {
+        .modal-header,
+        .modal-footer {
+            display: none;
+        }
+
+        .modal-body {
+            padding: 0;
+        }
+
+        .resume-container {
+            max-width: 100%;
+        }
+
+        body {
+            background: white;
+        }
+    }
+</style>
+

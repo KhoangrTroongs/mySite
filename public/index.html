@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-	<meta name="generator" content="Hugo 0.151.0"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="UTF-8">
+	<meta name="generator" content="Hugo 0.151.0"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=61835&amp;path=livereload" data-no-instant defer></script><meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <meta http-equiv="Accept-CH" content="DPR, Viewport-Width, Width">
@@ -29,7 +29,7 @@
 
 
 
-<meta property="og:url" content="http://localhost:1313/">
+<meta property="og:url" content="http://localhost:61835/">
   <meta property="og:site_name" content="Huu Duc&#39;s Portfolio">
   <meta property="og:title" content="Home">
   <meta property="og:description" content="Welcome to my personal portfolio">
@@ -106,6 +106,7 @@
 <meta name="description" content=Welcome&#32;to&#32;my&#32;personal&#32;portfolio>
 <link rel="stylesheet" href="/css/index.css" media="all">
 <link rel="stylesheet" href="/css/projects.css" media="all">
+<link rel="stylesheet" href="/css/hero-custom.css" media="all">
 
 
 <script defer src="/fontawesome-6/all-6.4.2.js"></script>
@@ -320,32 +321,41 @@ Huu Duc&#39;s Portfolio
     </nav>
 </header>
 <div id="content">
-<section id="hero" class="py-5 align-middle">
+<section id="hero" class="py-5 align-middle" style="
+    background-image: url('/images/me-wall.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+">
     <div class="container px-3 px-sm-5 px-md-5 px-lg-5 pt-lg-3">
         <div class="row">
-            <div class="col-sm-12 col-md-12 col-lg-8 content animate" id="primary-font">
-                <span class="subtitle">
-                    Hi, my name is
-                </span>
-                <h1>
-                    Huu Duc Ngo
-                </h1>
-                <h2>
-                    Ready to do more, ready to Learn more
-                </h2>
-                <p class="hero-content">
-                    A passionate software developer. I tend to make use of modern web technologies to build websites that look great, feel fantastic, and function correctly.
-                </p>
-                <div class="row">
-                    <div class="col-auto h-100">
-                        
-                        <a href="#" class="btn" download
-			  >
-                            Resume
-                        </a>
-                        
-                    </div>
-                    <div class="col-auto px-0 h-100"><span>
+            <div class="col-sm-12 col-md-12 col-lg-8">
+                <div class="hero-panel animate" id="primary-font">
+                    <span class="subtitle">
+                        Hi, my name is
+                    </span>
+                    <h1>
+                        Huu Duc Ngo
+                    </h1>
+                    <h2 class="hero-subtitle">
+                        Ready to <strong>DO</strong> more<br>
+Ready to <strong>LEARN</strong> more
+                    </h2>
+                    <p class="hero-content">
+                        A passionate software developer. I tend to make use of modern web technologies to build websites that look great, feel fantastic, and function correctly.
+                    </p>
+                    <div class="row align-items-center">
+                        <div class="col-auto h-100">
+                            
+                            <a href="#" class="btn" data-bs-toggle="modal" data-bs-target="#resumeModal" onclick="return false;">
+                                Resume
+                            </a>
+                            
+                        </div>
+                        <div class="col-auto px-0 h-100"><span>
     
     <span class="px-1">
         <a href="https://github.com/khoangrtroongs"
@@ -369,22 +379,465 @@ Huu Duc&#39;s Portfolio
     
 </span>
 </div>
-                </div>
-            </div>
-            <div class="col-sm-12 col-md-12 col-lg-4">
-                <div class="row justify-content-center">
-                    <div class="col-sm-12 col-md-9 pt-5 image animate px-5 px-md-5 px-lg-0 text-center">
-                        <img src="/images/hero.svg"
-                            class="img-thumbnail mx-auto"
-                            alt=""
-                        >
                     </div>
                 </div>
             </div>
+            
         </div>
     </div>
     
 </section>
+
+
+<div class="modal fade" id="resumeModal" tabindex="-1" aria-labelledby="resumeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-scrollable">
+        <div class="modal-content resume-modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="resumeModalLabel">Professional Resume</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body" id="resumeContent">
+                
+                <div class="resume-container">
+                    
+                    <div class="resume-header text-center mb-4">
+                        <img src="/images/me.png" alt="Profile" class="resume-avatar rounded-circle mb-3" style="width: 100px; height: 100px; object-fit: cover;">
+                        <h2 class="mb-1">Huu Duc Ngo</h2>
+                        <p class="text-muted mb-2">Ready to <strong>DO</strong> more<br>
+Ready to <strong>LEARN</strong> more</p>
+                        <p class="text-muted small">
+                            <i class="fas fa-envelope"></i> nhd.tkc@gmail.com | 
+                            <i class="fab fa-github"></i> <a href="https://github.com/khoangrtroongs" target="_blank">GitHub</a>
+                        </p>
+                    </div>
+
+                    
+                    
+                    <div class="resume-section mb-4">
+                        <h5 class="section-title border-bottom pb-2 mb-3">
+                            <i class="fas fa-user"></i> About Me
+                        </h5>
+                        <p class="small">I am a software developer with a passion for web development and network programming. I have experience building web applications, desktop applications, and working with various programming languages and frameworks.</p>
+                    </div>
+                    
+
+                    
+                    
+                    <div class="resume-section mb-4">
+                        <h5 class="section-title border-bottom pb-2 mb-3">
+                            <i class="fas fa-star"></i> Skills
+                        </h5>
+                        <div class="skills-list">
+                            
+                            <div class="skill-item mb-2">
+                                <small><strong>Programming Languages:</strong> C, Java, C#, Python, HTML, CSS, JavaScript, SQL</small>
+                            </div>
+                            
+                            <div class="skill-item mb-2">
+                                <small><strong>Frameworks:</strong> ASP.NET Core, Entity Framework, Flask, React (Basic)</small>
+                            </div>
+                            
+                            <div class="skill-item mb-2">
+                                <small><strong>Development Tools:</strong> Git / GitHub, Visual Studio, VS Code, SQL Server</small>
+                            </div>
+                            
+                            <div class="skill-item mb-2">
+                                <small><strong>Other Skills:</strong> UI/UX Design with WinForms, Agile Methodology, Technical Documentation</small>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+
+                    
+                    
+                    <div class="resume-section mb-4">
+                        <h5 class="section-title border-bottom pb-2 mb-3">
+                            <i class="fas fa-briefcase"></i> Experience
+                        </h5>
+                        
+                        <div class="experience-item mb-3">
+                            <div class="d-flex justify-content-between align-items-start">
+                                <h6 class="mb-1">ASP.NET Core (C#)</h6>
+                                
+                                <span class="badge bg-secondary small">2023 - 2024</span>
+                                
+                            </div>
+                            
+                            <p class="small text-muted mb-2"><strong>Web Development</strong></p>
+                            <p class="small mb-2"><ul>
+<li>Developed web applications using ASP.NET Core, including RESTful APIs and Razor Pages.</li>
+<li>Utilized Entity Framework for database operations and data modeling.</li>
+<li>Integrated front-end technologies such as HTML, CSS, and JavaScript to create responsive and interactive user interfaces.</li>
+<li>Implemented authentication and authorization mechanisms using ASP.NET Core Identity.</li>
+<li>Deployed applications to Somee, managing infrastructure as code with Terraform.</li>
+</ul>
+</p>
+                            
+                        </div>
+                        
+                        <div class="experience-item mb-3">
+                            <div class="d-flex justify-content-between align-items-start">
+                                <h6 class="mb-1">Java</h6>
+                                
+                                <span class="badge bg-secondary small">2023 - 2024</span>
+                                
+                            </div>
+                            
+                            <p class="small text-muted mb-2"><strong>T-OTP Applications</strong></p>
+                            <p class="small mb-2"><ul>
+<li>Developed desktop applications using Java Swing and JavaFX.</li>
+<li>Utilized object-oriented programming principles to design and implement complex software systems.</li>
+<li>Applied TOTP (Time-based One-Time Password) algorithm to generate and verify one-time passwords</li>
+<li>Integrated with various authentication protocols such as LDAP, SAML, and OAuth.</li>
+</ul>
+</p>
+                            
+                        </div>
+                        
+                        <div class="experience-item mb-3">
+                            <div class="d-flex justify-content-between align-items-start">
+                                <h6 class="mb-1">MySQL</h6>
+                                
+                                <span class="badge bg-secondary small">2023 - 2024</span>
+                                
+                            </div>
+                            
+                            <p class="small text-muted mb-2"><strong>Database Management</strong></p>
+                            <p class="small mb-2"><ul>
+<li>Designed and implemented database schemas for web applications using MySQL.</li>
+<li>Wrote complex SQL queries to retrieve and manipulate data.</li>
+<li>Ensured data integrity and security through proper indexing and access controls.</li>
+<li>Optimized database performance by analyzing query execution plans and implementing indexing strategies.</li>
+</ul>
+</p>
+                            
+                        </div>
+                        
+                        <div class="experience-item mb-3">
+                            <div class="d-flex justify-content-between align-items-start">
+                                <h6 class="mb-1">HTML, CSS, JavaScript</h6>
+                                
+                                <span class="badge bg-secondary small">2023 - 2024</span>
+                                
+                            </div>
+                            
+                            <p class="small text-muted mb-2"><strong>Frontend Development</strong></p>
+                            <p class="small mb-2"><ul>
+<li>Designed and implemented responsive and interactive user interfaces for web applications.</li>
+<li>Utilized HTML, CSS, and JavaScript to create visually appealing and user-friendly web pages.</li>
+<li>Integrated with backend services to fetch and display dynamic content.</li>
+<li>Implemented responsive design to ensure optimal user experience across different devices and screen sizes.</li>
+</ul>
+</p>
+                            
+                        </div>
+                        
+                        <div class="experience-item mb-3">
+                            <div class="d-flex justify-content-between align-items-start">
+                                <h6 class="mb-1">Python</h6>
+                                
+                                <span class="badge bg-secondary small">2024 - 2025</span>
+                                
+                            </div>
+                            
+                            <p class="small text-muted mb-2"><strong>Security Applications</strong></p>
+                            <p class="small mb-2"><ul>
+<li>Developed security applications using Python.</li>
+<li>Use API to interact with Postman.</li>
+<li>Using Ceasarypt, Fencerrypt, AES and other libraries to encrypt and decrypt data.</li>
+<li>Using Flask to create RESTful APIs.</li>
+</ul>
+</p>
+                            
+                        </div>
+                        
+                    </div>
+                    
+
+                    
+                    
+                    <div class="resume-section mb-4">
+                        <h5 class="section-title border-bottom pb-2 mb-3">
+                            <i class="fas fa-graduation-cap"></i> Education
+                        </h5>
+                        
+                        <div class="education-item mb-3">
+                            <div class="d-flex justify-content-between align-items-start">
+                                <div>
+                                    <h6 class="mb-1">Bachelor of Science in Software Engineering</h6>
+                                    <p class="small text-muted mb-1">Ho Chi Minh University of Technology</p>
+                                </div>
+                                <span class="badge bg-info small">2022 - 2026</span>
+                            </div>
+                            
+                            <p class="small mb-0"><strong>GPA:</strong> 3.4 out of 4.0</p>
+                            
+                        </div>
+                        
+                    </div>
+                    
+
+                    
+                    
+                    <div class="resume-section mb-4">
+                        <h5 class="section-title border-bottom pb-2 mb-3">
+                            <i class="fas fa-code"></i> Projects
+                        </h5>
+                        
+                        <div class="project-item mb-2">
+                            <div class="d-flex justify-content-between align-items-start">
+                                <h6 class="mb-1">WEBBANHANG</h6>
+                                <span class="badge bg-primary small">PHP</span>
+                            </div>
+                            <p class="small text-muted mb-0">E-commerce website for selling products online</p>
+                        </div>
+                        
+                        <div class="project-item mb-2">
+                            <div class="d-flex justify-content-between align-items-start">
+                                <h6 class="mb-1">DACS Elegant Suits</h6>
+                                <span class="badge bg-primary small">HTML</span>
+                            </div>
+                            <p class="small text-muted mb-0">E-commerce website for elegant suits and formal wear</p>
+                        </div>
+                        
+                        <div class="project-item mb-2">
+                            <div class="d-flex justify-content-between align-items-start">
+                                <h6 class="mb-1">Demo Docker</h6>
+                                <span class="badge bg-primary small">HTML</span>
+                            </div>
+                            <p class="small text-muted mb-0">Docker containerization demo and examples</p>
+                        </div>
+                        
+                        <div class="project-item mb-2">
+                            <div class="d-flex justify-content-between align-items-start">
+                                <h6 class="mb-1">NgoHuuDuc-2280600725</h6>
+                                <span class="badge bg-primary small">C#</span>
+                            </div>
+                            <p class="small text-muted mb-0">C# project for academic coursework</p>
+                        </div>
+                        
+                        <div class="project-item mb-2">
+                            <div class="d-flex justify-content-between align-items-start">
+                                <h6 class="mb-1">BMTTNC HUTECH</h6>
+                                <span class="badge bg-primary small">Python</span>
+                            </div>
+                            <p class="small text-muted mb-0">Python project for network programming and communication</p>
+                        </div>
+                        
+                        <div class="project-item mb-2">
+                            <div class="d-flex justify-content-between align-items-start">
+                                <h6 class="mb-1">Lab 06 - Final Test</h6>
+                                <span class="badge bg-primary small">Python</span>
+                            </div>
+                            <p class="small text-muted mb-0">Python laboratory assignment - Final Test</p>
+                        </div>
+                        
+                    </div>
+                    
+
+                    
+                    
+                    <div class="resume-section mb-4">
+                        <h5 class="section-title border-bottom pb-2 mb-3">
+                            <i class="fas fa-trophy"></i> Certifications
+                        </h5>
+                        
+                        <div class="achievement-item mb-2">
+                            <div class="d-flex justify-content-between align-items-start">
+                                <h6 class="mb-1">JavaScript Essentials 1</h6>
+                                <span class="badge bg-success small">Oct 2025</span>
+                            </div>
+                            <p class="small text-muted mb-1">Codecademy</p>
+                            <p class="small mb-0">Mastered the fundamentals of JavaScript programming</p>
+                        </div>
+                        
+                        <div class="achievement-item mb-2">
+                            <div class="d-flex justify-content-between align-items-start">
+                                <h6 class="mb-1">JavaScript Essentials 2</h6>
+                                <span class="badge bg-success small">Oct 2025</span>
+                            </div>
+                            <p class="small text-muted mb-1">Codecademy</p>
+                            <p class="small mb-0">Advanced JavaScript concepts and best practices</p>
+                        </div>
+                        
+                        <div class="achievement-item mb-2">
+                            <div class="d-flex justify-content-between align-items-start">
+                                <h6 class="mb-1">Networking Basics</h6>
+                                <span class="badge bg-success small">Oct 2025</span>
+                            </div>
+                            <p class="small text-muted mb-1">Coursera</p>
+                            <p class="small mb-0">Comprehensive understanding of computer networking fundamentals</p>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" onclick="window.print()">
+                    <i class="fas fa-print"></i> Print / Save as PDF
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+     
+    .resume-modal-content {
+        background-color: #ffffff;
+        color: #333;
+    }
+
+    .resume-modal-content .modal-header {
+        background-color: #f8f9fa;
+        border-bottom: 1px solid #dee2e6;
+    }
+
+    .resume-modal-content .modal-header .btn-close {
+        filter: invert(0);
+    }
+
+    .resume-modal-content .modal-footer {
+        background-color: #f8f9fa;
+        border-top: 1px solid #dee2e6;
+    }
+
+    .resume-container {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: #333;
+    }
+
+    .resume-header {
+        padding-bottom: 20px;
+        border-bottom: 2px solid #e9ecef;
+        margin-bottom: 20px;
+    }
+
+    .resume-header h2 {
+        font-weight: 700;
+        color: #212529;
+    }
+
+    .resume-header p {
+        color: #666;
+    }
+
+    .resume-section {
+        margin-bottom: 20px;
+    }
+
+    .section-title {
+        font-size: 1.1rem;
+        font-weight: 600;
+        color: #212529;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .section-title i {
+        color: #0d6efd;
+    }
+
+    .experience-item,
+    .education-item,
+    .project-item,
+    .achievement-item {
+        padding: 10px 0;
+    }
+
+    .experience-item h6,
+    .education-item h6,
+    .project-item h6,
+    .achievement-item h6 {
+        font-weight: 600;
+        color: #212529;
+        margin-bottom: 5px;
+    }
+
+    .skill-item {
+        padding: 5px 0;
+    }
+
+    .resume-avatar {
+        border: 3px solid #0d6efd;
+    }
+
+     
+    [data-bs-theme="dark"] .resume-modal-content {
+        background-color: #212529;
+        color: #e9ecef;
+    }
+
+    [data-bs-theme="dark"] .resume-modal-content .modal-header {
+        background-color: #2d3139;
+        border-bottom-color: #495057;
+    }
+
+    [data-bs-theme="dark"] .resume-modal-content .modal-header .btn-close {
+        filter: invert(1);
+    }
+
+    [data-bs-theme="dark"] .resume-modal-content .modal-footer {
+        background-color: #2d3139;
+        border-top-color: #495057;
+    }
+
+    [data-bs-theme="dark"] .resume-container {
+        color: #e9ecef;
+    }
+
+    [data-bs-theme="dark"] .resume-header {
+        border-bottom-color: #495057;
+    }
+
+    [data-bs-theme="dark"] .resume-header h2 {
+        color: #ffffff;
+    }
+
+    [data-bs-theme="dark"] .resume-header p {
+        color: #adb5bd;
+    }
+
+    [data-bs-theme="dark"] .section-title {
+        color: #ffffff;
+    }
+
+    [data-bs-theme="dark"] .experience-item h6,
+    [data-bs-theme="dark"] .education-item h6,
+    [data-bs-theme="dark"] .project-item h6,
+    [data-bs-theme="dark"] .achievement-item h6 {
+        color: #ffffff;
+    }
+
+    [data-bs-theme="dark"] .text-muted {
+        color: #adb5bd !important;
+    }
+
+    @media print {
+        .modal-header,
+        .modal-footer {
+            display: none;
+        }
+
+        .modal-body {
+            padding: 0;
+        }
+
+        .resume-container {
+            max-width: 100%;
+        }
+
+        body {
+            background: white;
+        }
+    }
+</style>
+
+
 
 <section id="about" class="py-0 py-sm-5">
     <div class="container bg-transparent">
@@ -1483,7 +1936,7 @@ Huu Duc&#39;s Portfolio
         <div class="col-md-4 text-center">
             
                 <div class="pb-2">
-                    <a href="http://localhost:1313/" title="Huu Duc&#39;s Portfolio">
+                    <a href="http://localhost:61835/" title="Huu Duc&#39;s Portfolio">
                         <img alt="Footer logo" src="/fav.png"
                             height="40px" width="40px">
                     </a>

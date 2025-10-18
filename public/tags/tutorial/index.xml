@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tutorial on Huu Duc&#39;s Portfolio</title>
-    <link>http://localhost:1313/tags/tutorial/</link>
+    <link>http://localhost:61835/tags/tutorial/</link>
     <description>Recent content in Tutorial on Huu Duc&#39;s Portfolio</description>
     <generator>Hugo</generator>
     <language>vi</language>
     <lastBuildDate>Wed, 01 Oct 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/tutorial/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:61835/tags/tutorial/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Các lý thuyết cơ bản về Java</title>
-      <link>http://localhost:1313/blogs/java-basic-01/</link>
+      <link>http://localhost:61835/blogs/java-basic-01/</link>
       <pubDate>Wed, 01 Oct 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blogs/java-basic-01/</guid>
+      <guid>http://localhost:61835/blogs/java-basic-01/</guid>
       <description>&lt;h2 id=&#34;giới-thiệu-về-java&#34;&gt;Giới thiệu về Java&lt;/h2&gt;&#xA;&lt;p&gt;Java là một ngôn ngữ lập trình được tạo ra vào năm 1995 bởi Sun Microsystems. Điều đặc biệt về Java là nó chạy trên bất kỳ máy tính nào miễn là có Java Virtual Machine (JVM) cài đặt. Điều này có nghĩa là bạn viết code một lần, nhưng có thể chạy ở nhiều nơi khác nhau.&lt;/p&gt;&#xA;&lt;p&gt;Java được sử dụng rộng rãi trong:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Ứng dụng web (backend)&lt;/li&gt;&#xA;&lt;li&gt;Ứng dụng di động (Android)&lt;/li&gt;&#xA;&lt;li&gt;Phần mềm doanh nghiệp&lt;/li&gt;&#xA;&lt;li&gt;Hệ thống lớn và phức tạp&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;cú-pháp-cơ-bản&#34;&gt;Cú pháp cơ bản&lt;/h2&gt;&#xA;&lt;p&gt;Mỗi chương trình Java bắt đầu với một class. Hãy xem ví dụ đơn giản nhất:&lt;/p&gt;</description>
     </item>
   </channel>

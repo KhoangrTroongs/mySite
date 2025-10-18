@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>First on Huu Duc&#39;s Portfolio</title>
+    <link>http://localhost:61835/tags/first/</link>
+    <description>Recent content in First on Huu Duc&#39;s Portfolio</description>
+    <generator>Hugo</generator>
+    <language>vi</language>
+    <lastBuildDate>Mon, 15 Jan 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:61835/tags/first/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>My First Blog Post</title>
+      <link>http://localhost:61835/blogs/first-post/</link>
+      <pubDate>Mon, 15 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:61835/blogs/first-post/</guid>
+      <description>&lt;h2 id=&#34;welcome-to-my-blog&#34;&gt;Welcome to my blog!&lt;/h2&gt;&#xA;&lt;p&gt;This is your first blog post. You can write about anything you want here.&lt;/p&gt;&#xA;&lt;h3 id=&#34;what-you-can-do&#34;&gt;What you can do:&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Write about your projects&lt;/li&gt;&#xA;&lt;li&gt;Share your thoughts and ideas&lt;/li&gt;&#xA;&lt;li&gt;Document your learning journey&lt;/li&gt;&#xA;&lt;li&gt;Connect with others in your field&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Feel free to edit this post and create new ones!&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>OOP on Huu Duc&#39;s Portfolio</title>
-    <link>http://localhost:1313/tags/oop/</link>
+    <link>http://localhost:61835/tags/oop/</link>
     <description>Recent content in OOP on Huu Duc&#39;s Portfolio</description>
     <generator>Hugo</generator>
     <language>vi</language>
     <lastBuildDate>Thu, 02 Oct 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/oop/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:61835/tags/oop/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Các nguyên tắc Lập trình Hướng đối tượng (OOP) trong Java</title>
-      <link>http://localhost:1313/blogs/java-oop-02/</link>
+      <link>http://localhost:61835/blogs/java-oop-02/</link>
       <pubDate>Thu, 02 Oct 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blogs/java-oop-02/</guid>
+      <guid>http://localhost:61835/blogs/java-oop-02/</guid>
       <description>&lt;h2 id=&#34;lập-trình-hướng-đối-tượng-là-gì&#34;&gt;Lập trình Hướng đối tượng là gì?&lt;/h2&gt;&#xA;&lt;p&gt;Lập trình Hướng đối tượng (OOP) là một phương pháp lập trình dựa trên khái niệm &amp;ldquo;đối tượng&amp;rdquo; và &amp;ldquo;class&amp;rdquo;. Nó giúp code trở nên dễ bảo trì, tái sử dụng và mở rộng.&lt;/p&gt;&#xA;&lt;h2 id=&#34;4-nguyên-tắc-cơ-bản-của-oop&#34;&gt;4 Nguyên tắc cơ bản của OOP&lt;/h2&gt;&#xA;&lt;h3 id=&#34;1-đóng-gói-encapsulation&#34;&gt;1. Đóng gói (Encapsulation)&lt;/h3&gt;&#xA;&lt;p&gt;Đóng gói là việc ẩn các chi tiết nội bộ của một class và chỉ cung cấp interface công khai.&lt;/p&gt;</description>
     </item>
   </channel>

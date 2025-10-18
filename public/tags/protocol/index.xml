@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Protocol on Huu Duc&#39;s Portfolio</title>
+    <link>http://localhost:61835/tags/protocol/</link>
+    <description>Recent content in Protocol on Huu Duc&#39;s Portfolio</description>
+    <generator>Hugo</generator>
+    <language>vi</language>
+    <lastBuildDate>Wed, 08 Oct 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:61835/tags/protocol/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>UDP Protocol in Java</title>
+      <link>http://localhost:61835/en/blogs/udp-protocol-08/</link>
+      <pubDate>Wed, 08 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:61835/en/blogs/udp-protocol-08/</guid>
+      <description>&lt;h2 id=&#34;what-is-udp&#34;&gt;What is UDP?&lt;/h2&gt;&#xA;&lt;p&gt;UDP (User Datagram Protocol) is a protocol that sends data quickly but doesn&amp;rsquo;t guarantee delivery. Think of it like sending regular mail - fast but might get lost.&lt;/p&gt;&#xA;&lt;h2 id=&#34;tcp-vs-udp-comparison&#34;&gt;TCP vs UDP Comparison&lt;/h2&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th&gt;Criteria&lt;/th&gt;&#xA;          &lt;th&gt;TCP&lt;/th&gt;&#xA;          &lt;th&gt;UDP&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Reliable&lt;/td&gt;&#xA;          &lt;td&gt;✓ Yes&lt;/td&gt;&#xA;          &lt;td&gt;✗ No&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Speed&lt;/td&gt;&#xA;          &lt;td&gt;Slow&lt;/td&gt;&#xA;          &lt;td&gt;Fast&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Connection&lt;/td&gt;&#xA;          &lt;td&gt;Required&lt;/td&gt;&#xA;          &lt;td&gt;Not needed&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Used for&lt;/td&gt;&#xA;          &lt;td&gt;Email, Web&lt;/td&gt;&#xA;          &lt;td&gt;Video, Games&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;h2 id=&#34;udp-characteristics&#34;&gt;UDP Characteristics&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Fast:&lt;/strong&gt; No need to establish connection&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Unreliable:&lt;/strong&gt; Data might be lost&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Unordered:&lt;/strong&gt; Data might arrive out of order&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Send packets:&lt;/strong&gt; Each packet is independent&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;datagramsocket-and-datagrampacket&#34;&gt;DatagramSocket and DatagramPacket&lt;/h2&gt;&#xA;&lt;p&gt;UDP uses &lt;code&gt;DatagramSocket&lt;/code&gt; to send/receive data via &lt;code&gt;DatagramPacket&lt;/code&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>TCP Protocol in Java</title>
+      <link>http://localhost:61835/en/blogs/tcp-protocol-07/</link>
+      <pubDate>Tue, 07 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:61835/en/blogs/tcp-protocol-07/</guid>
+      <description>&lt;h2 id=&#34;what-is-tcp&#34;&gt;What is TCP?&lt;/h2&gt;&#xA;&lt;p&gt;TCP (Transmission Control Protocol) is a protocol that ensures data is sent completely, in order, and without errors. It&amp;rsquo;s like sending a registered letter - you know for sure the recipient will receive it.&lt;/p&gt;&#xA;&lt;h2 id=&#34;tcp-characteristics&#34;&gt;TCP Characteristics&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Reliable:&lt;/strong&gt; Data is not lost&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Ordered:&lt;/strong&gt; Data arrives in the order it was sent&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Flow control:&lt;/strong&gt; Doesn&amp;rsquo;t send too fast&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Slower than UDP:&lt;/strong&gt; Because it checks many things&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;3-way-handshake&#34;&gt;3-Way Handshake&lt;/h2&gt;&#xA;&lt;p&gt;Before sending data, TCP must establish a connection in 3 steps:&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

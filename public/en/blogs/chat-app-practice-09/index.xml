@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Practice: Chat Application with TCP and UDP on Huu Duc&#39;s Portfolio</title>
+    <link>http://localhost:61835/en/blogs/chat-app-practice-09/</link>
+    <description>Recent content in Practice: Chat Application with TCP and UDP on Huu Duc&#39;s Portfolio</description>
+    <generator>Hugo</generator>
+    <language>vi</language>
+    <lastBuildDate></lastBuildDate>
+    <atom:link href="http://localhost:61835/en/blogs/chat-app-practice-09/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>
