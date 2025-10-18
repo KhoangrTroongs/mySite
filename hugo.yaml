@@ -114,28 +114,57 @@ params:
     enable: true
     title: "Experience"
     items:
-      - company: "Programming Languages"
+      - company: "ASP.NET Core (C#)"
         companyUrl: ""
         jobs:
-          - name: "Main Technologies"
-            date: "2020 - Present"
+          - name: "Web Development"
+            date: "2023 - 2024"
             content: |
-              - ASP.NET Core (C#): Web APIs, MVC, Razor Pages
-              - Python: scripting, data processing, server-side development
-              - Databases: MySQL, SQL Server
-              - Web: HTML, CSS, JavaScript, RESTful APIs, WebSocket
-              - Tools: Git, Docker, CI/CD
-
-              <p class="mt-3">
-              <span class="badge badge-language">C#</span>
-              <span class="badge badge-language">ASP.NET Core</span>
-              <span class="badge badge-language">Python</span>
-              <span class="badge badge-language">MySQL</span>
-              <span class="badge badge-language">SQL Server</span>
-              <span class="badge badge-language">JavaScript</span>
-              <span class="badge badge-language">Docker</span>
-              </p>
-
+              - Developed web applications using ASP.NET Core, including RESTful APIs and Razor Pages.
+              - Utilized Entity Framework for database operations and data modeling.
+              - Integrated front-end technologies such as HTML, CSS, and JavaScript to create responsive and interactive user interfaces.
+              - Implemented authentication and authorization mechanisms using ASP.NET Core Identity.
+              - Deployed applications to Somee, managing infrastructure as code with Terraform.
+      - company: "Java"
+        companyUrl: ""
+        jobs:
+          - name: "T-OTP Applications"
+            date: "2023 - 2024"   
+            content: |
+              - Developed desktop applications using Java Swing and JavaFX.
+              - Utilized object-oriented programming principles to design and implement complex software systems.
+              - Applied TOTP (Time-based One-Time Password) algorithm to generate and verify one-time passwords
+              - Integrated with various authentication protocols such as LDAP, SAML, and OAuth.
+      - company: "MySQL"
+        companyUrl: ""
+        jobs:
+          - name: "Database Management"
+            date: "2023 - 2024"   
+            content: |
+              - Designed and implemented database schemas for web applications using MySQL.
+              - Wrote complex SQL queries to retrieve and manipulate data.
+              - Ensured data integrity and security through proper indexing and access controls.
+              - Optimized database performance by analyzing query execution plans and implementing indexing strategies.
+      - company: "HTML, CSS, JavaScript"
+        companyUrl: ""
+        jobs:
+          - name: "Frontend Development"
+            date: "2023 - 2024"   
+            content: |
+              - Designed and implemented responsive and interactive user interfaces for web applications.
+              - Utilized HTML, CSS, and JavaScript to create visually appealing and user-friendly web pages.
+              - Integrated with backend services to fetch and display dynamic content.
+              - Implemented responsive design to ensure optimal user experience across different devices and screen sizes.
+      - company: "Python"
+        companyUrl: ""
+        jobs:
+        - name: "Security Applications"
+          date: "2024 - 2025"   
+          content: |
+            - Developed security applications using Python.
+            - Use API to interact with Postman.
+            - Using Ceasarypt, Fencerrypt, AES and other libraries to encrypt and decrypt data.
+            - Using Flask to create RESTful APIs.
   # Education
   education:
     enable: true
