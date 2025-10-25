@@ -2,122 +2,122 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Huu Duc&#39;s Portfolio</title>
-    <link>http://localhost:1313/tags/</link>
+    <link>https://my-site-eta-liard.vercel.app/tags/</link>
     <description>Recent content in Tags on Huu Duc&#39;s Portfolio</description>
     <generator>Hugo</generator>
     <language>vi</language>
     <lastBuildDate>Thu, 09 Oct 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://my-site-eta-liard.vercel.app/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Chat</title>
-      <link>http://localhost:1313/tags/chat/</link>
+      <link>https://my-site-eta-liard.vercel.app/tags/chat/</link>
       <pubDate>Thu, 09 Oct 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/chat/</guid>
+      <guid>https://my-site-eta-liard.vercel.app/tags/chat/</guid>
       <description></description>
     </item>
     <item>
       <title>Java</title>
-      <link>http://localhost:1313/tags/java/</link>
+      <link>https://my-site-eta-liard.vercel.app/tags/java/</link>
       <pubDate>Thu, 09 Oct 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/java/</guid>
+      <guid>https://my-site-eta-liard.vercel.app/tags/java/</guid>
       <description></description>
     </item>
     <item>
       <title>Practice</title>
-      <link>http://localhost:1313/tags/practice/</link>
+      <link>https://my-site-eta-liard.vercel.app/tags/practice/</link>
       <pubDate>Thu, 09 Oct 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/practice/</guid>
+      <guid>https://my-site-eta-liard.vercel.app/tags/practice/</guid>
       <description></description>
     </item>
     <item>
       <title>TCP</title>
-      <link>http://localhost:1313/tags/tcp/</link>
+      <link>https://my-site-eta-liard.vercel.app/tags/tcp/</link>
       <pubDate>Thu, 09 Oct 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/tcp/</guid>
+      <guid>https://my-site-eta-liard.vercel.app/tags/tcp/</guid>
       <description></description>
     </item>
     <item>
       <title>UDP</title>
-      <link>http://localhost:1313/tags/udp/</link>
+      <link>https://my-site-eta-liard.vercel.app/tags/udp/</link>
       <pubDate>Thu, 09 Oct 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/udp/</guid>
+      <guid>https://my-site-eta-liard.vercel.app/tags/udp/</guid>
       <description></description>
     </item>
     <item>
       <title>Network Protocol</title>
-      <link>http://localhost:1313/tags/network-protocol/</link>
+      <link>https://my-site-eta-liard.vercel.app/tags/network-protocol/</link>
       <pubDate>Wed, 08 Oct 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/network-protocol/</guid>
+      <guid>https://my-site-eta-liard.vercel.app/tags/network-protocol/</guid>
       <description></description>
     </item>
     <item>
       <title>Network</title>
-      <link>http://localhost:1313/tags/network/</link>
+      <link>https://my-site-eta-liard.vercel.app/tags/network/</link>
       <pubDate>Mon, 06 Oct 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/network/</guid>
+      <guid>https://my-site-eta-liard.vercel.app/tags/network/</guid>
       <description></description>
     </item>
     <item>
       <title>Socket</title>
-      <link>http://localhost:1313/tags/socket/</link>
+      <link>https://my-site-eta-liard.vercel.app/tags/socket/</link>
       <pubDate>Mon, 06 Oct 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/socket/</guid>
+      <guid>https://my-site-eta-liard.vercel.app/tags/socket/</guid>
       <description></description>
     </item>
     <item>
       <title>IO</title>
-      <link>http://localhost:1313/tags/io/</link>
+      <link>https://my-site-eta-liard.vercel.app/tags/io/</link>
       <pubDate>Sun, 05 Oct 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/io/</guid>
+      <guid>https://my-site-eta-liard.vercel.app/tags/io/</guid>
       <description></description>
     </item>
     <item>
       <title>Streams</title>
-      <link>http://localhost:1313/tags/streams/</link>
+      <link>https://my-site-eta-liard.vercel.app/tags/streams/</link>
       <pubDate>Sun, 05 Oct 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/streams/</guid>
+      <guid>https://my-site-eta-liard.vercel.app/tags/streams/</guid>
       <description></description>
     </item>
     <item>
       <title>Basics</title>
-      <link>http://localhost:1313/tags/basics/</link>
+      <link>https://my-site-eta-liard.vercel.app/tags/basics/</link>
       <pubDate>Sat, 04 Oct 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/basics/</guid>
+      <guid>https://my-site-eta-liard.vercel.app/tags/basics/</guid>
       <description></description>
     </item>
     <item>
       <title>Introduction</title>
-      <link>http://localhost:1313/tags/introduction/</link>
+      <link>https://my-site-eta-liard.vercel.app/tags/introduction/</link>
       <pubDate>Sat, 04 Oct 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/introduction/</guid>
+      <guid>https://my-site-eta-liard.vercel.app/tags/introduction/</guid>
       <description></description>
     </item>
     <item>
       <title>Game</title>
-      <link>http://localhost:1313/tags/game/</link>
+      <link>https://my-site-eta-liard.vercel.app/tags/game/</link>
       <pubDate>Fri, 03 Oct 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/game/</guid>
+      <guid>https://my-site-eta-liard.vercel.app/tags/game/</guid>
       <description></description>
     </item>
     <item>
       <title>Object-Oriented</title>
-      <link>http://localhost:1313/tags/object-oriented/</link>
+      <link>https://my-site-eta-liard.vercel.app/tags/object-oriented/</link>
       <pubDate>Thu, 02 Oct 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/object-oriented/</guid>
+      <guid>https://my-site-eta-liard.vercel.app/tags/object-oriented/</guid>
       <description></description>
     </item>
     <item>
       <title>OOP</title>
-      <link>http://localhost:1313/tags/oop/</link>
+      <link>https://my-site-eta-liard.vercel.app/tags/oop/</link>
       <pubDate>Thu, 02 Oct 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/oop/</guid>
+      <guid>https://my-site-eta-liard.vercel.app/tags/oop/</guid>
       <description></description>
     </item>
     <item>
       <title>Tutorial</title>
-      <link>http://localhost:1313/tags/tutorial/</link>
+      <link>https://my-site-eta-liard.vercel.app/tags/tutorial/</link>
       <pubDate>Wed, 01 Oct 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/tutorial/</guid>
+      <guid>https://my-site-eta-liard.vercel.app/tags/tutorial/</guid>
       <description></description>
     </item>
   </channel>

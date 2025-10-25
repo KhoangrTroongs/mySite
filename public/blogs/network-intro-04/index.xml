@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Mạng máy tính là gì? on Huu Duc&#39;s Portfolio</title>
-    <link>http://localhost:1313/blogs/network-intro-04/</link>
+    <link>https://my-site-eta-liard.vercel.app/blogs/network-intro-04/</link>
     <description>Recent content in Mạng máy tính là gì? on Huu Duc&#39;s Portfolio</description>
     <generator>Hugo</generator>
     <language>vi</language>
     <lastBuildDate></lastBuildDate>
-    <atom:link href="http://localhost:1313/blogs/network-intro-04/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://my-site-eta-liard.vercel.app/blogs/network-intro-04/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
