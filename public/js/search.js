@@ -7,6 +7,12 @@ function encodeHTML(str) {
 }
 
 function isValidUrl(url) {
+  // Check if URL is a relative path (starts with /)
+  if (typeof url === 'string' && url.startsWith('/')) {
+    return true;
+  }
+
+  // Check if URL is an absolute URL
   try {
     const parsedUrl = new URL(url, window.location.origin);
     return parsedUrl.protocol === "http:" || parsedUrl.protocol === "https:";
