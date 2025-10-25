@@ -1,5 +1,5 @@
 {{ if .Site.Params.hero.enable | default false }}
-<section id="hero" class="py-5 align-middle" style="
+<section id="hero" class="py-4 py-sm-5 align-middle" style="
     background-image: url('{{ .Site.Params.hero.backgroundImage }}');
     background-size: cover;
     background-position: center;
@@ -8,9 +8,9 @@
     display: flex;
     align-items: center;
 ">
-    <div class="container px-3 px-sm-5 px-md-5 px-lg-5 pt-lg-3">
-        <div class="row">
-            <div class="col-sm-12 col-md-12 col-lg-8">
+    <div class="container-fluid px-3 px-sm-4 px-md-5 px-lg-5 pt-lg-3">
+        <div class="row g-3 g-lg-4">
+            <div class="col-12 col-lg-6">
                 <div class="hero-panel {{ if .Site.Params.animate }}animate{{ end }}" id="primary-font">
                     <span class="subtitle">
                         {{ .Site.Params.hero.intro }}
@@ -39,12 +39,13 @@
                 </div>
             </div>
             {{ if .Site.Params.hero.image }}
-            <div class="col-sm-12 col-md-12 col-lg-4">
+            <div class="col-12 col-lg-4">
                 <div class="row justify-content-center">
-                    <div class="col-sm-12 col-md-9 pt-5 image {{ if .Site.Params.animate }}animate{{ end }} px-5 px-md-5 px-lg-0 text-center">
+                    <div class="col-12 col-sm-8 col-md-6 col-lg-12 pt-4 pt-lg-5 image {{ if .Site.Params.animate }}animate{{ end }} px-3 px-sm-4 px-lg-0 text-center">
                         <img src="{{ .Site.Params.hero.image }}"
                             class="img-thumbnail mx-auto{{ if .Site.Params.hero.roundImage }} rounded-circle{{ end }}"
                             alt=""
+                            style="max-width: 100%; height: auto; width: clamp(150px, 80vw, 300px);"
                         >
                     </div>
                 </div>

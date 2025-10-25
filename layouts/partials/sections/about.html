@@ -1,24 +1,24 @@
 {{ if .Site.Params.about.enable | default false }}
-<section id="about" class="py-0 py-sm-5">
-    <div class="container bg-transparent">
-        <h3 class="text-center bg-transparent">{{ .Site.Params.about.title }}</h3>
-        <div class="bg-transparent row justify-content-center px-3 py-5">
+<section id="about" class="py-4 py-sm-5">
+    <div class="container-fluid bg-transparent px-3 px-sm-4 px-md-5 px-lg-5">
+        <h3 class="text-center bg-transparent mb-4 mb-sm-5">{{ .Site.Params.about.title }}</h3>
+        <div class="bg-transparent row justify-content-center py-3 py-sm-5 g-4">
             {{ if .Site.Params.about.image }}
-            <div class="col-sm-12 col-md-8 col-lg-4 mb-5 mb-sm-0 mb-md-5 mb-lg-0 d-none d-sm-none d-md-block">
-                <div class="image d-flex px-5">
-                    <img src="{{ .Site.Params.about.image }}" class="img-thumbnail mx-auto rounded-circle" alt="">
+            <div class="col-12 col-md-6 col-lg-4 mb-3 mb-md-0 d-none d-md-block">
+                <div class="image d-flex px-3 px-md-4 px-lg-5">
+                    <img src="{{ .Site.Params.about.image }}" class="img-thumbnail mx-auto rounded-circle" alt="" style="max-width: 100%; height: auto; width: clamp(150px, 80vw, 250px);">
                 </div>
             </div>
             {{ end }}
-            <div class="col-sm-12 col-md-12 col-lg-8 content">
+            <div class="col-12 col-md-12 col-lg-8 content">
                 {{ .Site.Params.about.content | markdownify }}
 
                 {{ if .Site.Params.about.skills.enable }}
-                <h5 class="mt-4 mb-3">{{ .Site.Params.about.skills.title }}</h5>
-                <div class="row g-3">
+                <h5 class="mt-4 mt-sm-5 mb-3 mb-sm-4">{{ .Site.Params.about.skills.title }}</h5>
+                <div class="row g-2 g-sm-3">
                     {{ range .Site.Params.about.skills.items }}
-                    <div class="col-lg-6 col-md-6 col-sm-12">
-                        <div class="skill-item p-3 border rounded" style="background-color: rgba(0,0,0,0.02); border-color: rgba(0,0,0,0.1) !important;">
+                    <div class="col-12 col-sm-6 col-lg-6">
+                        <div class="skill-item p-3 p-sm-4 border rounded" style="background-color: rgba(0,0,0,0.02); border-color: rgba(0,0,0,0.1) !important; font-size: clamp(13px, 2vw, 15px);">
                             {{ . | markdownify }}
                         </div>
                     </div>

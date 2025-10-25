@@ -1,13 +1,13 @@
 {{ if .Site.Params.achievements.enable | default false }}
-<section id="achievements" class="py-5">
-    <div class="container">
-        <h3 class="text-center">{{ .Site.Params.achievements.title | default "Achievements" }}</h3>
-        <div class="px-0 px-md-5 px-lg-5">
-            <div class="row justify-content-center px-3 px-md-5 px-lg-5">
+<section id="achievements" class="py-4 py-sm-5">
+    <div class="container-fluid px-3 px-sm-4 px-md-5 px-lg-5">
+        <h3 class="text-center mb-4 mb-sm-5">{{ .Site.Params.achievements.title | default "Achievements" }}</h3>
+        <div class="px-0">
+            <div class="row justify-content-center px-0 g-3 g-sm-4">
                 <!-- Display certificates from data file -->
                 {{ if .Site.Data.achievements }}
                     {{ range .Site.Data.achievements.certificates }}
-                    <div class="col-lg-3 col-md-4 col-sm-6 my-4">
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 my-2">
                         <div class="achievement-badge-card" data-bs-toggle="modal" data-bs-target="#certificateModal{{ .id }}" style="cursor: pointer;">
                             <div class="badge-container">
                                 <img src="{{ .badge }}" alt="{{ .title }}" class="achievement-badge" title="Click to view certificate">
@@ -52,7 +52,7 @@
                     <!-- Fallback to old achievements config if data file doesn't exist -->
                     {{ range .Site.Params.achievements.items }}
                     {{ if .url }}
-                    <div class="col-lg-4 col-md-6 my-3">
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 my-2">
                         <a class="card my-3 h-100 p-3" href="{{ .url }}" title="{{ .title }}" target="_blank">
                             {{if .image }}
                                 <div class="card-head">
@@ -68,7 +68,7 @@
                         </a>
                     </div>
                     {{ else }}
-                    <div class="col-lg-4 col-md-6 my-3">
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 my-2">
                         <div class="card my-3 h-100 p-3" title="{{ .title }}">
                             {{if .image }}
                                 <div class="card-head">
@@ -98,7 +98,7 @@
     box-shadow: 0 0 36px rgba(0,0,0,0.1);
     transition: all 0.3s ease;
     border: 2px solid transparent;
-    padding: 1.5rem;
+    padding: clamp(1rem, 3vw, 1.5rem);
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -113,12 +113,12 @@
 }
 
 .badge-container {
-    margin-bottom: 1rem;
+    margin-bottom: clamp(0.75rem, 2vw, 1rem);
     flex-shrink: 0;
 }
 
 .achievement-badge {
-    max-width: 150px;
+    max-width: clamp(100px, 80vw, 150px);
     height: auto;
     border-radius: 0.5rem;
     transition: transform 0.3s ease;
@@ -140,18 +140,19 @@
     opacity: 0.9;
     margin-bottom: 0.5rem;
     font-weight: 600;
+    font-size: clamp(0.95rem, 2vw, 1.1rem);
 }
 
 .badge-issuer {
     color: var(--text-secondary-color);
-    font-size: 0.9rem;
+    font-size: clamp(0.8rem, 1.5vw, 0.95rem);
     margin-bottom: 0.5rem;
     font-weight: 500;
 }
 
 .badge-description {
     color: var(--text-secondary-color);
-    font-size: 0.85rem;
+    font-size: clamp(0.75rem, 1.2vw, 0.9rem);
     margin: 0;
     line-height: 1.4;
 }
@@ -174,13 +175,46 @@
 
 .modal-title {
     color: var(--text-color);
+    font-size: clamp(1rem, 2vw, 1.25rem);
 }
 
 .btn-close {
     filter: invert(1);
 }
 
-@media (max-width: 768px) {
+/* Extra Small Devices */
+@media (max-width: 575.98px) {
+    .achievement-badge-card {
+        padding: 0.75rem;
+    }
+
+    .achievement-badge {
+        max-width: 100px;
+    }
+
+    .badge-title {
+        font-size: 0.9rem;
+    }
+
+    .badge-description {
+        font-size: 0.75rem;
+    }
+
+    .modal-dialog {
+        margin: 0.5rem;
+    }
+
+    .modal-body {
+        padding: 1rem;
+    }
+
+    .modal-body iframe {
+        height: 400px !important;
+    }
+}
+
+/* Small Devices */
+@media (min-width: 576px) and (max-width: 767.98px) {
     .achievement-badge-card {
         padding: 1rem;
     }
@@ -189,16 +223,15 @@
         max-width: 120px;
     }
 
-    .badge-title {
-        font-size: 1rem;
+    .modal-body iframe {
+        height: 500px !important;
     }
+}
 
-    .badge-description {
-        font-size: 0.8rem;
-    }
-
-    .modal-dialog {
-        margin: 0.5rem;
+/* Medium Devices and up */
+@media (min-width: 768px) {
+    .modal-body iframe {
+        height: 600px !important;
     }
 }
 </style>

@@ -1,12 +1,12 @@
 {{ if .Site.Params.projects.enable | default false }}
-<section id="projects" class="py-5">
-    <div class="container">
-        <h3 class="text-center">{{ .Site.Params.projects.title | default "Projects" }}</h3>
-        <div class="row justify-content-center px-3 px-md-5">
+<section id="projects" class="py-4 py-sm-5">
+    <div class="container-fluid px-3 px-sm-4 px-md-5 px-lg-5">
+        <h3 class="text-center mb-4 mb-sm-5">{{ .Site.Params.projects.title | default "Projects" }}</h3>
+        <div class="row justify-content-center px-0 g-3 g-sm-4">
             <!-- Display projects from data file (GitHub repositories) -->
             {{ if .Site.Data.projects }}
                 {{ range .Site.Data.projects.repositories }}
-                <div class="col-lg-4 col-md-6 my-3">
+                <div class="col-12 col-sm-6 col-lg-4 my-2">
                     <a href="{{ .url }}" target="_blank" class="project-card-link" title="View on GitHub">
                         <div class="card my-3 h-100 project-card" title="{{ .name }}">
                             <div class="card-body bg-transparent p-4">
@@ -31,7 +31,7 @@
             {{ else }}
                 <!-- Fallback to old projects config if data file doesn't exist -->
                 {{ range .Site.Params.projects.items }}
-                <div class="col-lg-4 col-md-6 my-3">
+                <div class="col-12 col-sm-6 col-lg-4 my-2">
                     <div class="card my-3 h-100" title="{{ .title }}">
                         <div class="card-head">
                             <img class="card-img-top" src="{{ .image }}" alt="{{ .title }}">
@@ -73,7 +73,7 @@
             <!-- Display projects from content pages -->
             {{ range ( where .Site.RegularPages "Type" "projects" ) }}
             {{ if .Params.showInHome | default true }}
-            <div class="col-lg-4 col-md-6 my-3">
+            <div class="col-12 col-sm-6 col-lg-4 my-2">
                 <div class="card my-3 h-100" title="{{ .Title }}">
                     <div class="card-head">
                         <img class="card-img-top" src="{{ .Params.image }}" alt="{{ .Title }}">
@@ -147,19 +147,21 @@
     opacity: 0.9;
     margin: 0;
     flex: 1;
+    font-size: clamp(1rem, 2vw, 1.25rem);
 }
 
 .project-card .card-text {
     color: var(--text-secondary-color) !important;
     flex-grow: 1;
     line-height: 1.5;
+    font-size: clamp(0.875rem, 1.5vw, 1rem);
 }
 
 .badge-language {
     background-color: var(--primary-color) !important;
     color: var(--text-color) !important;
     white-space: nowrap;
-    font-size: 0.75rem;
+    font-size: clamp(0.65rem, 1vw, 0.85rem);
     padding: 0.35rem 0.65rem;
 }
 
@@ -167,15 +169,18 @@
     background-color: transparent !important;
     border-top: 1px solid var(--text-secondary-color);
     margin-top: auto;
+    padding: clamp(0.75rem, 2vw, 1rem) !important;
 }
 
 .project-card .card-footer i {
-    font-size: 0.9rem;
+    font-size: clamp(0.85rem, 1.5vw, 1rem);
 }
 
-@media (max-width: 768px) {
+/* Extra Small Devices */
+@media (max-width: 575.98px) {
     .project-card {
-        margin-bottom: 1rem;
+        margin-bottom: 0.75rem;
+        min-height: 180px;
     }
 
     .project-header {
@@ -184,7 +189,30 @@
     }
 
     .project-card h5 {
-        font-size: 1rem;
+        font-size: 0.95rem;
+    }
+
+    .project-card .card-body {
+        padding: 1rem !important;
+    }
+}
+
+/* Small Devices */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .project-card {
+        margin-bottom: 0.75rem;
+    }
+
+    .project-header {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}
+
+/* Medium Devices and up */
+@media (min-width: 768px) {
+    .project-card {
+        margin-bottom: 1rem;
     }
 }
 </style>
